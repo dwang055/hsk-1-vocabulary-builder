@@ -1227,7 +1227,7 @@ footer {
   </div>
 
   <footer>
-    <div class="footer-author">Created by Daniel Wang (dwang055@gmail.com) · HSK 1 Vocabulary Collection · For Educational Use · © 2026</div>
+    <div class="footer-author">Created by Daniel Wang (dwang055@gmail.com)· HSK 1 Vocabulary Collection · For Educational Use · © 2026</div>
     <div class="footer-quote">“A journey of a thousand miles begins with a single step.”<br>Lao Tzu, Tao Te Ching</div>
   </footer>
 </div>
@@ -8040,6 +8040,11 @@ function renderQuestion() {
     document.getElementById('quizPhase2').style.display = 'none';
 
     document.getElementById('quizSentence').innerHTML = blankWord(entry.quote_en, entry.word);
+    // Show Chinese sentence (blanked) for learners
+    const quizZhDiv = document.createElement('div');
+    quizZhDiv.style.cssText = 'font-size: 1rem; color: var(--muted); margin-top: 10px; padding-top: 10px; border-top: 1px solid var(--s20);';
+    quizZhDiv.innerHTML = blankWord(entry.quote_zh, entry.word);
+    document.getElementById('quizSentence').parentNode.appendChild(quizZhDiv);
 
     const group = GROUPS[S.gIdx];
     const distractors = shuffle(group.map(w => w.word).filter(w => w !== entry.word)).slice(0, 3);
@@ -8708,3 +8713,4 @@ if (VOCAB.length > 1) {
 </div>
 </body>
 </html>
+
