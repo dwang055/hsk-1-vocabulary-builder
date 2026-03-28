@@ -1,0 +1,3551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Chinese Journey · HSK 1 Vocabulary</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📖</text></svg>">
+<meta name="description" content="This vocabulary collection features 500 carefully selected words for HSK Level 1 learners (the first step in Chinese proficiency). Each word comes with pinyin pronunciation, clear English definition, and practical Chinese collocations to help you use the word naturally. Two example sentences are provided: the first is concise and rooted in everyday life, making it easy to understand the collocations; the second reinforces learning by repeating 3-5 previously learned words, building a mental network for long-term retention. With synonyms and antonyms tailored for non-native learners, this collection helps students build not just vocabulary, but also the confidence to start speaking Chinese.">
+<meta name="theme-color" content="#06131a">
+<style>
+:root {
+  --bg:       #06131a;
+  --panel:    #0b1b24;
+  --panel2:   #0e2230;
+  --stroke:   #7ad0e0;
+  --text:     #e7fbff;
+  --muted:    #9fd6df;
+  --muted2:   #4a6e78;
+  --bad:      #ff5c7a;
+  --good:     #6ef7c8;
+  --gold:     #f0c040;
+  --gold2:    #ffe080;
+  --s35:      rgba(122,208,224,.35);
+  --s60:      rgba(122,208,224,.60);
+  --s20:      rgba(122,208,224,.20);
+  --o15:      rgba(0,0,0,.15);
+  --o25:      rgba(0,0,0,.25);
+  --panel-a:  rgba(11,27,36,.90);
+  --good15:   rgba(110,247,200,.15);
+  --good60:   rgba(110,247,200,.60);
+  --bad12:    rgba(255,92,122,.12);
+  --bad55:    rgba(255,92,122,.55);
+  --gold10:   rgba(240,192,64,.10);
+  --gold50:   rgba(240,192,64,.50);
+}
+*, *::before, *::after { box-sizing: border-box; margin:0; padding:0; -webkit-tap-highlight-color:transparent; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  background: radial-gradient(900px 600px at 50% 0%, var(--panel2) 0%, var(--bg) 65%);
+  color: var(--text);
+  min-height: 100vh;
+  padding-bottom: 40px;
+}
+button { font-family: inherit; color: var(--text); cursor: pointer; }
+.wrapper { max-width: 680px; margin: 0 auto; padding: 0 14px; }
+.app-header {
+  text-align: center;
+  padding: 32px 10px 22px;
+  border-bottom: 1px solid var(--s20);
+}
+.app-header h1 {
+  font-family: Georgia, 'Times New Roman', 'Songti SC', serif;
+  font-size: clamp(2rem, 7vw, 2.8rem);
+  font-weight: 700;
+  color: var(--good);
+  letter-spacing: .01em;
+  text-shadow: 0 0 30px rgba(110,247,200,.25);
+  line-height: 1.15;
+}
+.app-header .tagline {
+  margin-top: 8px;
+  font-size: clamp(0.85rem, 3vw, 1rem);
+  color: var(--muted);
+  font-style: italic;
+  font-family: Georgia, 'Times New Roman', serif;
+}
+.app-header .book-credit {
+  margin-top: 6px;
+  font-size: 0.75rem;
+  color: var(--muted2);
+  letter-spacing: .06em;
+  text-transform: uppercase;
+}
+.header-star-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 14px;
+  flex-wrap: wrap;
+}
+.header-badge {
+  background: var(--panel-a);
+  border: 1px solid var(--s35);
+  border-radius: 999px;
+  padding: 6px 14px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--muted);
+  cursor: pointer;
+  transition: background .15s, border-color .15s;
+}
+.header-badge:hover { background: rgba(122,208,224,.08); border-color: var(--s60); }
+.header-badge.active { background: var(--good15); border-color: var(--good60); color: var(--good); }
+.group-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 18px;
+  background: var(--panel);
+  border: 1px solid var(--s35);
+  border-radius: 16px;
+  padding: 10px 14px;
+}
+.group-nav-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  flex: 1;
+}
+.group-label {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  color: var(--muted2);
+  font-weight: 700;
+}
+.group-num {
+  font-size: 1.05rem;
+  font-weight: 900;
+  color: var(--good);
+  letter-spacing: .02em;
+}
+.group-dots {
+  display: flex;
+  gap: 5px;
+  margin-top: 3px;
+}
+.group-dot {
+  width: 7px; height: 7px;
+  border-radius: 50%;
+  background: var(--muted2);
+  transition: background .2s, transform .2s;
+}
+.group-dot.active { background: var(--good); transform: scale(1.3); }
+.group-dot.done { background: var(--s60); }
+.nav-pill {
+  background: rgba(122,208,224,.08);
+  border: 1px solid var(--s35);
+  border-radius: 999px;
+  padding: 8px 16px;
+  font-size: 0.85rem;
+  font-weight: 800;
+  color: var(--muted);
+  transition: all .15s;
+  white-space: nowrap;
+}
+.nav-pill:hover:not(:disabled) { background: rgba(122,208,224,.15); border-color: var(--s60); color: var(--text); }
+.nav-pill:disabled { opacity: .35; pointer-events: none; }
+.word-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-top: 10px;
+  padding: 0 2px;
+}
+.word-nav-center {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 1;
+  justify-content: center;
+}
+.word-counter {
+  font-size: 0.82rem;
+  color: var(--muted);
+  font-weight: 700;
+}
+.word-counter span { color: var(--text); }
+.icon-btn {
+  background: rgba(122,208,224,.08);
+  border: 1px solid var(--s35);
+  border-radius: 50%;
+  width: 36px; height: 36px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1rem;
+  transition: all .15s;
+  color: var(--muted);
+}
+.icon-btn:hover { background: rgba(122,208,224,.15); border-color: var(--s60); color: var(--text); }
+.icon-btn.starred { color: var(--gold); border-color: var(--gold50); background: var(--gold10); }
+.icon-btn:disabled { opacity: .3; pointer-events: none; }
+.word-card {
+  margin-top: 10px;
+  background: linear-gradient(160deg, rgba(14,34,48,.85), rgba(11,27,36,.95));
+  border: 1px solid var(--s35);
+  border-radius: 22px;
+  overflow: hidden;
+  transition: border-color .2s;
+}
+.word-card-top {
+  padding: 20px 20px 16px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 10px;
+  border-bottom: 1px solid var(--s20);
+}
+.word-left { display: flex; flex-direction: column; gap: 4px; }
+.word-display {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-size: clamp(1.7rem, 6vw, 2.2rem);
+  font-weight: 900;
+  color: var(--gold);
+  letter-spacing: .02em;
+  line-height: 1;
+  text-shadow: 0 0 20px rgba(240,192,64,.2);
+}
+.pron-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.pron-text {
+  font-size: 1.1rem;
+  color: var(--muted);
+  font-weight: 500;
+  letter-spacing: .03em;
+}
+.speak-btn {
+  background: var(--good15);
+  border: 1px solid var(--good60);
+  border-radius: 999px;
+  padding: 3px 10px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--good);
+  transition: all .15s;
+}
+.speak-btn:hover { background: rgba(110,247,200,.25); }
+.chapter-badge {
+  background: rgba(122,208,224,.08);
+  border: 1px solid var(--s35);
+  border-radius: 8px;
+  padding: 4px 9px;
+  font-size: 0.65rem;
+  font-weight: 700;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: .07em;
+  white-space: nowrap;
+  align-self: flex-start;
+}
+.definition-block {
+  padding: 14px 20px 16px;
+  border-bottom: 1px solid var(--s20);
+}
+.def-en {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: rgba(231,251,255,.9);
+}
+.def-zh {
+  font-size: 1.08rem;
+  line-height: 1.7;
+  color: var(--muted);
+  margin-top: 4px;
+  font-weight: 500;
+}
+.sentence-tab-row {
+  display: flex;
+  gap: 0;
+  border-bottom: 1px solid var(--s20);
+}
+.sent-tab {
+  flex: 1;
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  padding: 10px 14px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--muted2);
+  transition: all .15s;
+  text-align: center;
+}
+.sent-tab:hover { color: var(--muted); background: rgba(122,208,224,.04); }
+.sent-tab.active {
+  color: var(--good);
+  border-bottom-color: var(--good);
+  background: rgba(110,247,200,.04);
+}
+.sentence-content {
+  padding: 18px 20px 20px;
+}
+.sent-en {
+  font-family: Georgia, 'Times New Roman', 'Songti SC', serif;
+  font-size: clamp(1.08rem, 3.5vw, 1.18rem);
+  line-height: 1.85;
+  color: rgba(231,251,255,.88);
+  font-style: italic;
+}
+.sent-zh {
+  font-size: 1.05rem;
+  line-height: 1.9;
+  color: var(--muted);
+  margin-top: 12px;
+  font-weight: 400;
+  padding-top: 12px;
+  border-top: 1px solid var(--s20);
+}
+.sent-en .hl {
+  font-style: normal;
+  font-weight: 700;
+  color: var(--gold2);
+  background: rgba(240,192,64,.08);
+  border-radius: 3px;
+  padding: 0 2px;
+}
+.sent-source {
+  margin-top: 10px;
+  font-size: 0.7rem;
+  color: var(--muted2);
+  text-align: right;
+  letter-spacing: .04em;
+}
+.quiz-phase-label {
+  font-size: .72rem;
+  font-weight: 600;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--muted2);
+  margin-bottom: 10px;
+}
+.quiz-section {
+  margin-top: 14px;
+  background: var(--panel);
+  border: 1px solid var(--s35);
+  border-radius: 18px;
+  overflow: hidden;
+}
+.quiz-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 18px;
+  cursor: pointer;
+  user-select: none;
+  transition: background .15s;
+}
+.quiz-header:hover { background: rgba(122,208,224,.05); }
+.quiz-header-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.quiz-title {
+  font-size: 0.9rem;
+  font-weight: 800;
+  color: var(--text);
+}
+.quiz-subtitle {
+  font-size: 0.75rem;
+  color: var(--muted2);
+  margin-top: 1px;
+}
+.quiz-score-badge {
+  background: var(--good15);
+  border: 1px solid var(--good60);
+  border-radius: 999px;
+  padding: 3px 10px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--good);
+  display: none;
+}
+.quiz-toggle-icon { font-size: 0.85rem; color: var(--muted2); transition: transform .2s; }
+.quiz-toggle-icon.open { transform: rotate(180deg); }
+.quiz-body {
+  display: none;
+  padding: 0 18px 18px;
+  border-top: 1px solid var(--s20);
+}
+.quiz-body.open { display: block; }
+.quiz-progress-bar {
+  height: 4px;
+  background: rgba(122,208,224,.12);
+  border-radius: 999px;
+  margin: 14px 0 16px;
+  overflow: hidden;
+}
+.quiz-progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--good), #4edfc9);
+  border-radius: 999px;
+  transition: width .3s ease;
+}
+.quiz-q-num {
+  font-size: 0.75rem;
+  color: var(--muted2);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  margin-bottom: 10px;
+}
+.quiz-sentence {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-style: italic;
+  font-size: clamp(1.05rem, 3vw, 1.15rem);
+  line-height: 1.8;
+  color: rgba(231,251,255,.9);
+  background: rgba(122,208,224,.05);
+  border: 1px solid var(--s20);
+  border-radius: 12px;
+  padding: 14px 16px;
+  margin-bottom: 16px;
+}
+.blank { color: var(--gold); font-style: normal; font-weight: 700; letter-spacing: .1em; }
+.quiz-choices {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+.choice-btn {
+  background: rgba(122,208,224,.06);
+  border: 1px solid var(--s35);
+  border-radius: 12px;
+  padding: 10px 12px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--text);
+  text-align: left;
+  transition: all .15s;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.choice-btn:hover:not(:disabled) { background: rgba(122,208,224,.12); border-color: var(--s60); }
+.choice-btn .choice-label {
+  background: var(--s35);
+  border-radius: 4px;
+  width: 20px; height: 20px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 0.7rem;
+  font-weight: 900;
+  flex-shrink: 0;
+}
+.choice-btn.correct { background: var(--good15); border-color: var(--good60); color: var(--good); }
+.choice-btn.wrong   { background: var(--bad12);  border-color: var(--bad55);  color: var(--bad); }
+.choice-btn:disabled { pointer-events: none; opacity: .7; }
+.quiz-feedback {
+  font-size: 0.85rem;
+  font-weight: 700;
+  padding: 8px 12px;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  display: none;
+}
+.quiz-feedback.correct-fb { background: var(--good15); color: var(--good); border: 1px solid var(--good60); }
+.quiz-feedback.wrong-fb   { background: var(--bad12);  color: var(--bad);  border: 1px solid var(--bad55); }
+.quiz-next-btn {
+  background: rgba(122,208,224,.1);
+  border: 1px solid var(--s60);
+  border-radius: 999px;
+  padding: 8px 20px;
+  font-size: 0.85rem;
+  font-weight: 800;
+  color: var(--text);
+  display: none;
+  transition: background .15s;
+}
+.quiz-next-btn:hover { background: rgba(122,208,224,.18); }
+.quiz-result {
+  display: none;
+  text-align: center;
+  padding: 16px 0 4px;
+}
+.quiz-result-score {
+  font-size: 2rem;
+  font-weight: 900;
+  color: var(--good);
+  line-height: 1;
+}
+.quiz-result-label {
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin-top: 4px;
+  margin-bottom: 14px;
+}
+.quiz-result-btns { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; }
+.quiz-retry-btn {
+  background: var(--good15);
+  border: 1px solid var(--good60);
+  border-radius: 999px;
+  padding: 8px 20px;
+  font-size: 0.85rem;
+  font-weight: 800;
+  color: var(--good);
+  transition: background .15s;
+}
+.quiz-retry-btn:hover { background: rgba(110,247,200,.25); }
+.quiz-start-area {
+  padding: 16px 0 4px;
+  text-align: center;
+}
+.quiz-start-desc {
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin-bottom: 14px;
+  line-height: 1.6;
+}
+.quiz-start-btn {
+  background: var(--good15);
+  border: 1px solid var(--good60);
+  border-radius: 999px;
+  padding: 10px 28px;
+  font-size: 0.9rem;
+  font-weight: 800;
+  color: var(--good);
+  transition: background .15s;
+}
+.quiz-start-btn:hover { background: rgba(110,247,200,.25); }
+.quiz-skip-btn {
+  background: none;
+  border: none;
+  color: var(--muted2);
+  font-size: 0.78rem;
+  margin-left: 14px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.starred-section {
+  margin-top: 14px;
+  background: var(--panel);
+  border: 1px solid var(--s35);
+  border-radius: 18px;
+  overflow: hidden;
+}
+.starred-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 18px;
+  cursor: pointer;
+  user-select: none;
+  transition: background .15s;
+}
+.starred-header:hover { background: rgba(240,192,64,.04); }
+.starred-header-left { display: flex; align-items: center; gap: 10px; }
+.starred-title { font-size: 0.9rem; font-weight: 800; color: var(--text); }
+.starred-count {
+  background: var(--gold10);
+  border: 1px solid var(--gold50);
+  border-radius: 999px;
+  padding: 2px 9px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--gold);
+}
+.starred-body { display: none; padding: 0 18px 18px; border-top: 1px solid var(--s20); }
+.starred-body.open { display: block; }
+.starred-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding-top: 14px;
+}
+.starred-chip {
+  background: var(--gold10);
+  border: 1px solid var(--gold50);
+  border-radius: 999px;
+  padding: 5px 13px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--gold);
+  cursor: pointer;
+  transition: all .15s;
+}
+.starred-chip:hover { background: rgba(240,192,64,.18); }
+.starred-empty {
+  padding-top: 14px;
+  font-size: 0.85rem;
+  color: var(--muted2);
+  font-style: italic;
+  text-align: center;
+}
+.my-sentences-block {
+  padding: 16px 20px 18px;
+  border-top: 1px solid var(--s20);
+}
+.my-sent-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.my-sent-title {
+  font-size: 0.82rem;
+  font-weight: 800;
+  color: var(--muted);
+  letter-spacing: .02em;
+}
+.my-sent-counter {
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--muted2);
+  background: var(--o25);
+  border: 1px solid var(--s20);
+  border-radius: 999px;
+  padding: 2px 9px;
+}
+.my-sent-counter.full { color: var(--gold); border-color: var(--gold50); background: var(--gold10); }
+.my-sent-input-row {
+  display: flex;
+  gap: 8px;
+  align-items: stretch;
+}
+.my-sent-input {
+  flex: 1;
+  background: rgba(122,208,224,.06);
+  border: 1px solid var(--s35);
+  border-radius: 12px;
+  color: var(--text);
+  font-family: inherit;
+  font-size: 0.88rem;
+  padding: 9px 13px;
+  outline: none;
+  transition: border-color .15s;
+  min-width: 0;
+}
+.my-sent-input:focus { border-color: var(--s60); background: rgba(122,208,224,.09); }
+.my-sent-input::placeholder { color: var(--muted2); }
+.my-sent-save-btn {
+  background: rgba(122,208,224,.1);
+  border: 1px solid var(--s60);
+  border-radius: 12px;
+  padding: 9px 16px;
+  font-size: 0.82rem;
+  font-weight: 800;
+  color: var(--stroke);
+  white-space: nowrap;
+  transition: background .15s;
+  flex-shrink: 0;
+}
+.my-sent-save-btn:hover { background: rgba(122,208,224,.2); }
+.my-sent-list {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  margin-top: 10px;
+}
+.my-sent-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  background: rgba(122,208,224,.05);
+  border: 1px solid var(--s20);
+  border-radius: 10px;
+  padding: 9px 12px;
+}
+.my-sent-num {
+  font-size: 0.68rem;
+  font-weight: 900;
+  color: var(--muted2);
+  background: var(--s20);
+  border-radius: 4px;
+  padding: 2px 6px;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+.my-sent-text {
+  flex: 1;
+  font-size: 0.88rem;
+  line-height: 1.55;
+  color: rgba(231,251,255,.85);
+}
+.my-sent-del {
+  background: none;
+  border: none;
+  color: var(--muted2);
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 0 3px;
+  flex-shrink: 0;
+  opacity: .6;
+  transition: color .15s, opacity .15s;
+}
+.my-sent-del:hover { color: var(--bad); opacity: 1; }
+.starred-quiz-divider {
+  height: 1px;
+  background: var(--s20);
+  margin: 14px 0;
+}
+.sq-start-area { text-align: center; padding-bottom: 4px; }
+.sq-desc {
+  font-size: 0.82rem;
+  color: var(--muted2);
+  margin-bottom: 12px;
+  line-height: 1.6;
+}
+.sq-unlock-hint {
+  font-size: 0.75rem;
+  color: var(--muted2);
+  font-style: italic;
+}
+footer {
+  margin-top: 36px;
+  padding: 20px 14px 28px;
+  border-top: 1px solid var(--s20);
+  text-align: center;
+}
+.footer-author {
+  font-size: 0.8rem;
+  color: var(--muted2);
+  line-height: 1.9;
+}
+.footer-author a { color: var(--muted); text-decoration: none; }
+.footer-author a:hover { color: var(--stroke); }
+.footer-quote {
+  margin-top: 12px;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-style: italic;
+  font-size: 0.82rem;
+  color: var(--muted2);
+  max-width: 440px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.7;
+}
+#toast {
+  position: fixed;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%) translateY(10px);
+  background: rgba(11,27,36,.96);
+  border: 1px solid var(--s60);
+  border-radius: 999px;
+  padding: 10px 22px;
+  font-size: 0.88rem;
+  font-weight: 700;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .2s, transform .2s;
+  white-space: nowrap;
+  z-index: 9999;
+}
+#toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
+#toast.gold { border-color: var(--gold50); color: var(--gold); }
+#toast.good { border-color: var(--good60); color: var(--good); }
+@media (max-width: 480px) {
+  .word-card-top { flex-wrap: wrap; }
+  .quiz-choices { grid-template-columns: 1fr; }
+  .group-dots { display: none; }
+  .nav-pill { padding: 7px 12px; font-size: 0.8rem; }
+}
+.synan-block {
+  padding: 10px 20px 14px;
+  border-bottom: 1px solid var(--s20);
+  display: flex; gap: 14px; flex-wrap: wrap;
+}
+.synan-group { flex: 1; min-width: 0; }
+.synan-label {
+  font-size: 0.65rem; font-weight: 900; text-transform: uppercase;
+  letter-spacing: .1em; margin-bottom: 5px;
+}
+.synan-label.syn { color: var(--good); }
+.synan-label.ant { color: var(--bad); }
+.synan-chips { display: flex; flex-wrap: wrap; gap: 5px; }
+.synan-chip {
+  font-size: 0.75rem; font-weight: 600; padding: 3px 9px;
+  border-radius: 999px;
+}
+.synan-chip.syn { background: rgba(110,247,200,.1); border: 1px solid rgba(110,247,200,.35); color: var(--good); }
+.synan-chip.ant { background: rgba(255,92,122,.08); border: 1px solid rgba(255,92,122,.3);  color: var(--bad); }
+.spell-content { padding: 18px 20px 22px; }
+.spell-sentence {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-style: italic;
+  font-size: clamp(1.08rem, 3.5vw, 1.18rem);
+  line-height: 1.85;
+  color: rgba(231,251,255,.88);
+  margin-bottom: 18px;
+}
+.spell-sentence .hl { font-style: normal; font-weight: 700; color: var(--gold2); }
+.spell-boxes {
+  display: flex; flex-wrap: wrap; gap: 6px;
+  justify-content: center; margin-bottom: 18px;
+}
+.spell-box {
+  width: 40px; height: 46px;
+  border: 2px solid var(--s35);
+  border-radius: 8px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.3rem; font-weight: 800; text-transform: lowercase;
+  background: rgba(122,208,224,.05);
+  transition: border-color .15s, background .15s;
+  flex-shrink: 0;
+}
+.spell-box.filled   { border-color: var(--s60); background: rgba(122,208,224,.1); color: var(--text); }
+.spell-box.correct  { border-color: var(--good); background: rgba(110,247,200,.15); color: var(--good); }
+.spell-box.wrong    { border-color: var(--bad);  background: rgba(255,92,122,.12);  color: var(--bad); }
+.spell-box.cursor   { border-color: var(--gold); animation: spell-blink .9s ease infinite; }
+@keyframes spell-blink { 0%,100% { border-color: var(--gold); } 50% { border-color: transparent; } }
+.spell-input-row {
+  display: flex; gap: 8px; align-items: center; justify-content: center; flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+.spell-input {
+  background: rgba(122,208,224,.06); border: 1px solid var(--s35);
+  border-radius: 12px; color: var(--text); font-family: inherit;
+  font-size: 1rem; font-weight: 700; padding: 9px 14px; outline: none;
+  width: 180px; text-align: center; letter-spacing: .12em;
+  transition: border-color .15s;
+}
+.spell-input:focus { border-color: var(--s60); }
+.spell-input::placeholder { color: var(--muted2); font-weight: 400; letter-spacing: 0; }
+.spell-check-btn {
+  background: var(--good15); border: 1px solid var(--good60);
+  border-radius: 12px; padding: 9px 18px;
+  font-size: .88rem; font-weight: 800; color: var(--good);
+  transition: background .15s;
+}
+.spell-check-btn:hover { background: rgba(110,247,200,.25); }
+.spell-reveal-btn {
+  background: none; border: none; color: var(--muted2);
+  font-size: .78rem; text-decoration: underline; cursor: pointer;
+  display: block; text-align: center; margin-top: 4px;
+}
+.spell-feedback {
+  text-align: center; font-size: .9rem; font-weight: 800;
+  padding: 10px; border-radius: 10px; margin-top: 4px; display: none;
+}
+.spell-feedback.ok  { background: var(--good15); color: var(--good); border: 1px solid var(--good60); }
+.spell-feedback.err { background: var(--bad12);  color: var(--bad);  border: 1px solid var(--bad55); }
+.spell-hint-row { text-align: center; margin-bottom: 10px; }
+.spell-hint-text { font-size: .78rem; color: var(--muted2); font-style: italic; }
+
+/* ── Print button ─────────────────────────────────────── */
+.print-btn { margin-left: 8px; }
+.header-star-row { display: flex; justify-content: center; align-items: center; flex-wrap: wrap; gap: 8px; }
+
+/* ── Print styles ─────────────────────────────────────── */
+@media print {
+  body * { visibility: hidden; }
+  #printContainer, #printContainer * { visibility: visible; }
+  #printContainer { display: block !important; position: absolute; inset: 0; background: white; }
+}
+
+
+.flashcard-container {
+  display: none;
+  padding: 20px;
+  text-align: center;
+}
+.flashcard-container.active {
+  display: block;
+}
+.flashcard-flip {
+  perspective: 1000px;
+  margin-bottom: 24px;
+}
+.flashcard-inner {
+  position: relative;
+  width: 100%;
+  min-height: 280px;
+  background: linear-gradient(160deg, rgba(14,34,48,.85), rgba(11,27,36,.95));
+  border: 1px solid rgba(122,208,224,.3);
+  border-radius: 18px;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all .3s ease;
+  transform-style: preserve-3d;
+}
+.flashcard-inner:hover {
+  border-color: rgba(122,208,224,.6);
+  background: linear-gradient(160deg, rgba(14,34,48,.9), rgba(11,27,36,1));
+}
+.flashcard-label {
+  font-size: 0.72rem;
+  color: var(--muted2);
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  margin-bottom: 16px;
+  font-weight: 700;
+}
+.flashcard-content {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--good);
+  line-height: 1.6;
+  text-shadow: 0 0 20px rgba(110,247,200,.15);
+}
+.flashcard-word-main {
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: var(--good);
+  margin-bottom: 8px;
+  text-shadow: 0 0 20px rgba(110,247,200,.15);
+}
+.flashcard-pron {
+  font-size: 0.9rem;
+  color: var(--muted);
+  font-weight: 500;
+  font-style: italic;
+  margin: 6px 0;
+}
+.flashcard-pos-display {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #6ef7c8;
+  background: rgba(110, 247, 200, 0.1);
+  border: 1px solid rgba(110, 247, 200, 0.3);
+  border-radius: 4px;
+  padding: 4px 8px;
+  margin: 6px 0;
+  min-height: 20px;
+}
+.flashcard-hear {
+  background: var(--good15);
+  border: 1px solid var(--good60);
+  border-radius: 999px;
+  padding: 4px 10px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--good);
+  cursor: pointer;
+  transition: all .15s;
+  margin-left: 8px;
+  display: inline-block;
+}
+.badge {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  background: rgba(110, 247, 200, 0.15);
+  border: 1px solid rgba(110, 247, 200, 0.4);
+  color: #6ef7c8;
+  margin: 0 4px;
+}
+.badge-pos {
+  display: inline-block !important;
+  background: rgba(110, 247, 200, 0.15) !important;
+  border: 1px solid rgba(110, 247, 200, 0.4) !important;
+  color: #6ef7c8 !important;
+  padding: 4px 10px !important;
+  border-radius: 999px !important;
+  font-size: 0.75rem !important;
+  font-weight: 700 !important;
+  margin: 0 4px !important;
+}
+.flashcard-hear:hover {
+  background: var(--good25);
+  border-color: var(--good);
+}
+.flashcard-pos {
+  display: inline-block;
+  background: rgba(122,208,224,.15);
+  border: 1px solid rgba(122,208,224,.4);
+  border-radius: 4px;
+  padding: 2px 8px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--muted);
+  margin-right: 8px;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+}
+.flashcard-def-en {
+  font-size: 1.1rem;
+  color: rgba(231,251,255,.9);
+  font-family: inherit;
+  font-weight: 600;
+  line-height: 1.7;
+  margin-bottom: 8px;
+}
+.flashcard-def-zh {
+  font-size: 1.05rem;
+  color: var(--muted);
+  font-weight: 500;
+  line-height: 1.7;
+}
+.flashcard-hint {
+  font-size: 0.75rem;
+  color: var(--muted2);
+  margin-top: 12px;
+  font-style: italic;
+}
+.flashcard-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  margin-bottom: 18px;
+}
+.flashcard-progress {
+  font-size: 0.85rem;
+  color: var(--muted);
+  font-weight: 700;
+  min-width: 60px;
+}
+.flashcard-btn {
+  background: rgba(122,208,224,.1);
+  border: 1px solid var(--s60);
+  border-radius: 999px;
+  padding: 8px 16px;
+  font-size: 0.85rem;
+  font-weight: 800;
+  color: var(--text);
+  cursor: pointer;
+  transition: all .15s;
+}
+.flashcard-btn:hover:not(:disabled) {
+  background: rgba(122,208,224,.2);
+  border-color: var(--s60);
+}
+.flashcard-btn:disabled {
+  opacity: .35;
+  cursor: not-allowed;
+}
+
+</style>
+</head>
+<body>
+
+<div id="toast"></div>
+
+<div class="wrapper">
+  <div class="app-header">
+    <h1>Chinese Journey: HSK 1 Vocabulary Edition</h1>
+    <div class="tagline">Build Your Chinese Vocabulary, Unlock a New World — 500 Essential Words for Beginners</div>
+    <div class="book-credit">100 words &middot; 100 sentences &middot; Daniel Wang's HSK 1 Vocabulary Builder</div>
+    <div class="header-star-row">
+      <button class="header-badge" id="starredToggleBtn">⭐ Starred Words (<span id="starredCountHeader">0</span>)</button>
+      <button class="header-badge print-btn" id="printBtn" onclick="openPrintModal()">🖨️ Print</button>
+    </div>
+  </div>
+
+  <div class="group-nav">
+    <button class="nav-pill" id="prevGroupBtn">← Prev</button>
+    <div class="group-nav-center">
+      <div class="group-label">Group</div>
+      <div class="group-num" id="groupNumDisplay">1 / 10</div>
+      <div class="group-dots" id="groupDots"></div>
+    </div>
+    <button class="nav-pill" id="nextGroupBtn">Next →</button>
+  </div>
+
+  <div class="word-nav">
+    <button class="nav-pill" id="prevWordBtn">←</button>
+    <div class="word-nav-center">
+      <div class="word-counter">Word <span id="wordNumDisplay">1</span> / <span id="groupSizeDisplay">10</span></div>
+      <button class="icon-btn" id="starBtn" title="Star this word">☆</button>
+      <button class="icon-btn" id="speakBtn" title="Hear pronunciation">🔊</button>
+    </div>
+    <button class="nav-pill" id="nextWordBtn">Next →</button>
+  </div>
+
+  <div class="word-card" id="wordCard">
+    <div class="word-card-top">
+      <div class="word-left">
+        <div class="word-display" id="wordDisplay">—</div>
+        <div class="pron-row">
+          <span class="pron-text" id="pronDisplay">—</span>
+          <button class="speak-btn" id="speakBtn2">🔊 Hear it</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="definition-block">
+      <div class="def-en" id="defEn">—</div>
+      <div class="def-zh" id="defZh">—</div>
+    </div>
+
+    <div class="synan-block" id="synanBlock">
+      <div class="synan-group">
+        <div class="synan-label syn">Synonyms</div>
+        <div class="synan-chips" id="synChips"></div>
+      </div>
+      <div class="synan-group">
+        <div class="synan-label ant">Antonyms</div>
+        <div class="synan-chips" id="antChips"></div>
+      </div>
+    </div>
+
+    <div class="sentence-tab-row">
+      <button class="sent-tab active" id="tabNovel">📖 Source Sentence</button>
+      <button class="sent-tab" id="tabAI">💡 Example</button>
+      <button class="sent-tab" id="tabFlashcard">📇 Flashcard</button>
+    </div>
+
+    <div class="sentence-content" id="sentenceContent">
+      <div style="display: flex; gap: 12px; align-items: flex-start; margin-bottom: 12px;">
+        <div class="sent-en" id="sentEn" style="flex: 1;">—</div>
+        <button id="sentenceHearBtn" style="flex-shrink: 0; padding: 8px 14px; background: rgba(122,208,224,.12); border: 1.5px solid rgba(122,208,224,.4); border-radius: 8px; color: #7AD0E0; cursor: pointer; font-weight: 600; white-space: nowrap; font-size: 0.85rem;" onclick="const e=document.getElementById(\'sentEn\');if(e){let t=e.textContent;if(t&&t!==\'—\'){t=t.replace(/<[^>]*>/g,\'\');if(t.trim())speak(t);}}">🔊 Hear</button>
+      </div>
+      <div class="sent-zh" id="sentZh">—</div>
+      <div class="sent-source" id="sentSource">—</div>
+    </div>
+
+    <div class="flashcard-container" id="flashcardContainer">
+      <div class="flashcard-nav">
+        <button class="flashcard-btn" id="flashPrevBtn" title="Previous card">← Prev</button>
+        <div class="flashcard-progress" id="flashProgress">1 / 10</div>
+        <button class="flashcard-btn" id="flashNextBtn" title="Next card">Next →</button>
+      </div>
+      <div class="flashcard-flip" id="flashFlip">
+        <div class="flashcard-inner" id="flashInner" onclick="toggleFlashcard()">
+          <div class="flashcard-label" id="flashLabel">Word</div>
+          <div class="flashcard-content" id="flashContent">—</div>
+          <div class="flashcard-hint">Tap to reveal</div>
+        </div>
+      </div>
+      <button class="icon-btn" id="flashStarBtn" title="Star this word" style="margin-bottom: 14px;">⭐</button>
+    </div>
+
+    <div class="my-sentences-block">
+      <div class="my-sent-header">
+        <span class="my-sent-title">✍️ My Sentences</span>
+        <span class="my-sent-counter" id="mySentCounter">0 / 3</span>
+      </div>
+      <div class="my-sent-input-row">
+        <input type="text" class="my-sent-input" id="mySentInput"
+          placeholder="Write your own sentence using this word…"
+          autocomplete="off" autocorrect="off" spellcheck="false">
+        <button class="my-sent-save-btn" id="mySentSaveBtn">Save</button>
+      </div>
+      <div class="my-sent-list" id="mySentList"></div>
+    </div>
+  </div>
+
+  <div class="quiz-section" id="quizSection">
+    <div class="quiz-header" id="quizHeader">
+      <div class="quiz-header-left">
+        <div>
+          <div class="quiz-title">📝 Group Quiz</div>
+          <div class="quiz-subtitle" id="quizSubtitle">Part 1: Choose · Part 2: Spell</div>
+        </div>
+        <div class="quiz-score-badge" id="quizScoreBadge">—</div>
+      </div>
+      <div>
+        <span class="quiz-toggle-icon" id="quizToggleIcon">▾</span>
+      </div>
+    </div>
+    <div class="quiz-body" id="quizBody">
+      <div class="quiz-start-area" id="quizStartArea">
+        <div class="quiz-start-desc" id="quizStartDesc">Test yourself on Group 1. Fill in the blanks using words from this group.</div>
+        <button class="quiz-start-btn" id="quizStartBtn">Start Quiz</button>
+        <button class="quiz-skip-btn" id="quizSkipBtn">Skip</button>
+      </div>
+      <div id="quizQuestionArea" style="display:none;">
+        <div class="quiz-progress-bar"><div class="quiz-progress-fill" id="quizProgressFill"></div></div>
+        <div class="quiz-q-num" id="quizQNum">Question 1 / 10</div>
+
+        <div id="quizPhase1">
+          <div class="quiz-phase-label">📖 Choose the word — Orwell's sentence</div>
+          <div class="quiz-sentence" id="quizSentence">—</div>
+          <div class="quiz-choices" id="quizChoices"></div>
+          <div class="quiz-feedback" id="quizFeedback"></div>
+        </div>
+
+        <div id="quizPhase2" style="display:none;">
+          <div class="quiz-phase-label">💡 Spell the word — AI example sentence</div>
+          <div class="quiz-sentence" id="qSpellSentence">—</div>
+          <div class="spell-boxes" id="qSpellBoxes"></div>
+          <div class="spell-input-row">
+            <input type="text" class="spell-input" id="qSpellInput"
+              placeholder="type the word…"
+              autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+            <button class="spell-check-btn" id="qSpellCheckBtn">Check</button>
+          </div>
+          <button class="spell-reveal-btn" id="qSpellRevealBtn">Show answer</button>
+          <div class="quiz-feedback" id="qSpellFeedback"></div>
+        </div>
+
+        <button class="quiz-next-btn" id="quizNextBtn" style="display:none;">Next →</button>
+      </div>
+      <div class="quiz-result" id="quizResult">
+        <div class="quiz-result-score" id="quizResultScore">—</div>
+        <div class="quiz-result-label" id="quizResultLabel">—</div>
+        <div class="quiz-result-btns">
+          <button class="quiz-retry-btn" id="quizRetryBtn">↻ Retry Quiz</button>
+          <button class="quiz-skip-btn" id="quizCloseBtn">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="starred-section" id="starredSection">
+    <div class="starred-header" id="starredHeader">
+      <div class="starred-header-left">
+        <div class="starred-title">⭐ Starred Words</div>
+        <div class="starred-count" id="starredCount">0</div>
+      </div>
+      <span class="quiz-toggle-icon" id="starredToggleIcon">▾</span>
+    </div>
+    <div class="starred-body" id="starredBody">
+      <div class="starred-list" id="starredList"></div>
+
+      <div class="starred-quiz-wrap" id="starredQuizWrap">
+        <div class="starred-quiz-divider"></div>
+        <div class="sq-start-area" id="sqStartArea">
+          <div class="sq-desc" id="sqDesc">Star 5 or more words to unlock your personal quiz.</div>
+          <button class="quiz-start-btn" id="sqStartBtn" style="display:none;">⭐ Quiz My Starred Words</button>
+          <div class="sq-unlock-hint" id="sqUnlockHint">(<span id="sqStarredCount">0</span> / 5 starred so far)</div>
+        </div>
+        <div id="sqQuestionArea" style="display:none;">
+          <div class="quiz-progress-bar"><div class="quiz-progress-fill" id="sqProgressFill"></div></div>
+          <div class="quiz-q-num" id="sqQNum">Question 1 / ?</div>
+          <div class="quiz-sentence" id="sqSentence">—</div>
+          <div class="quiz-choices" id="sqChoices"></div>
+          <div class="quiz-feedback" id="sqFeedback"></div>
+          <button class="quiz-next-btn" id="sqNextBtn">Next →</button>
+        </div>
+        <div class="quiz-result" id="sqResult" style="display:none;">
+          <div class="quiz-result-score" id="sqResultScore">—</div>
+          <div class="quiz-result-label" id="sqResultLabel">—</div>
+          <div class="quiz-result-btns">
+            <button class="quiz-retry-btn" id="sqRetryBtn">↻ Retry</button>
+            <button class="quiz-skip-btn" id="sqResetBtn">Reset</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-author">Created by Daniel Wang (dwang055@gmail.com)· HSK 1 Vocabulary Collection · For Educational Use · © 2026</div>
+    <div class="footer-quote">“A journey of a thousand miles begins with a single step.”<br>Lao Tzu, Tao Te Ching</div>
+  </footer>
+</div>
+
+<script>
+// ============================================================
+// PASTE YOUR COMPLETE VOCAB ARRAY HERE (ALL 100 WORDS)
+// ============================================================
+// ============================================================
+const BOOK_CONFIG = {
+  "title": "Chinese Journey: HSK 1 Vocabulary Edition",
+  "bookName": "HSK 1 Vocabulary Builder",
+  "author": "Daniel Wang",
+  "year": "2026",
+  "tagline": "Build Your Chinese Vocabulary, Unlock a New World — 500 Essential Words for Beginners"
+};
+const VOCAB = [
+  {
+    "word": "爱",
+    "pron": "ài",
+    "def_en": "to love; to like",
+    "def_zh": "爱学习；爱看书；爱家人",
+    "quote_en": "我爱喝茶。",
+    "quote_zh": "I love drinking tea.",
+    "ex_en": "爸爸爱喝茶，妈妈爱看书。",
+    "ex_zh": "Dad loves drinking tea, Mom loves reading books.",
+    "part_of_speech": "verb"
+  },
+  {
+    "word": "爱好",
+    "pron": "àihào",
+    "def_en": "hobby; to be fond of",
+    "def_zh": "我的爱好；爱好音乐",
+    "quote_en": "我的爱好是看书。",
+    "quote_zh": "My hobby is reading.",
+    "ex_en": "爸爸爱好喝茶，妈妈爱好看书。",
+    "ex_zh": "Dad's hobby is drinking tea, Mom's hobby is reading.",
+    "part_of_speech": "n./v."
+  },
+  {
+    "word": "八",
+    "pron": "bā",
+    "def_en": "eight",
+    "def_zh": "八点；八个；八岁",
+    "quote_en": "现在八点。",
+    "quote_zh": "It's eight o'clock now.",
+    "ex_en": "我八点起床，爸爸八点出门。",
+    "ex_zh": "I get up at eight, Dad goes out at eight.",
+    "part_of_speech": "num."
+  },
+  {
+    "word": "爸爸",
+    "pron": "bàba",
+    "def_en": "father; dad",
+    "def_zh": "爸爸好；爸爸在哪儿",
+    "quote_en": "爸爸在家。",
+    "quote_zh": "Dad is at home.",
+    "ex_en": "爸爸爱喝茶，妈妈爱看书。",
+    "ex_zh": "Dad loves drinking tea, Mom loves reading books.",
+    "part_of_speech": "noun"
+  },
+  {
+    "word": "吧",
+    "pron": "ba",
+    "def_en": "suggestion particle; let's",
+    "def_zh": "走吧；好吧；是吗",
+    "quote_en": "我们走吧。",
+    "quote_zh": "Let's go.",
+    "ex_en": "爸爸说走吧，妈妈也说好吧。",
+    "ex_zh": "Dad says let's go, Mom also says okay.",
+    "part_of_speech": "part."
+  },
+  {
+    "word": "白",
+    "pron": "bái",
+    "def_en": "white; blank",
+    "def_zh": "白色；白天；白纸",
+    "quote_en": "这是白色的。",
+    "quote_zh": "This is white.",
+    "ex_en": "白天是白色的，晚上是黑色的。",
+    "ex_zh": "Daytime is white, nighttime is black.",
+    "part_of_speech": "adjective"
+  },
+  {
+    "word": "白天",
+    "pron": "báitiān",
+    "def_en": "daytime",
+    "def_zh": "白天工作；白天学习",
+    "quote_en": "白天我工作。",
+    "quote_zh": "I work during the day.",
+    "ex_en": "爸爸白天工作，妈妈白天在家。",
+    "ex_zh": "Dad works during the day, Mom stays at home during the day.",
+    "part_of_speech": "noun"
+  },
+  {
+    "word": "百",
+    "pron": "bǎi",
+    "def_en": "hundred",
+    "def_zh": "一百；几百；百分之百",
+    "quote_en": "一百块钱。",
+    "quote_zh": "One hundred yuan.",
+    "ex_en": "爸爸有一百块，妈妈也有一百块。",
+    "ex_zh": "Dad has one hundred yuan, Mom also has one hundred yuan.",
+    "part_of_speech": "num."
+  },
+  {
+    "word": "班",
+    "pron": "bān",
+    "def_en": "class; shift",
+    "def_zh": "上班；班级；班长",
+    "quote_en": "我去上班。",
+    "quote_zh": "I go to work.",
+    "ex_en": "爸爸上班，妈妈也上班。",
+    "ex_zh": "Dad goes to work, Mom also goes to work.",
+    "part_of_speech": "noun"
+  },
+  {
+    "word": "半",
+    "pron": "bàn",
+    "def_en": "half",
+    "def_zh": "一半；半天；半小时",
+    "quote_en": "我等你半小时。",
+    "quote_zh": "I'll wait for you half an hour.",
+    "ex_en": "爸爸等半小时，妈妈等半天。",
+    "ex_zh": "Dad waits half an hour, Mom waits half a day.",
+    "part_of_speech": "num."
+  },
+  {
+    "word": "办",
+    "pron": "bàn",
+    "def_en": "to do; to handle",
+    "def_zh": "办事；办理；办法",
+    "quote_en": "我去办事。",
+    "quote_zh": "I go to handle things.",
+    "ex_en": "爸爸办事，妈妈在家。",
+    "ex_zh": "Dad handles things, Mom stays home.",
+    "part_of_speech": "verb"
+  },
+  {
+    "word": "办法",
+    "pron": "bànfǎ",
+    "def_en": "method; way",
+    "def_zh": "想办法；好办法",
+    "quote_en": "我有一个好办法。",
+    "quote_zh": "I have a good idea.",
+    "ex_en": "爸爸想办法，妈妈也觉得好。",
+    "ex_zh": "Dad thinks of a way, Mom also thinks it's good.",
+    "part_of_speech": "noun"
+  },
+  {
+    "word": "办公室",
+    "pron": "bàngōngshì",
+    "def_en": "office",
+    "def_zh": "在办公室；办公室工作",
+    "quote_en": "我在办公室。",
+    "quote_zh": "I am in the office.",
+    "ex_en": "爸爸在办公室，妈妈在家里。",
+    "ex_zh": "Dad is in the office, Mom is at home.",
+    "part_of_speech": "noun"
+  },
+  {
+    "word": "帮忙",
+    "pron": "bāngmáng",
+    "def_en": "to help",
+    "def_zh": "帮忙做事；请帮忙",
+    "quote_en": "请你帮忙。",
+    "quote_zh": "Please help.",
+    "ex_en": "爸爸帮忙妈妈，妈妈帮忙爸爸。",
+    "ex_zh": "Dad helps Mom, Mom helps Dad.",
+    "part_of_speech": "verb"
+  },
+  {
+    "word": "包",
+    "pron": "bāo",
+    "def_en": "bag; to wrap",
+    "def_zh": "书包；包子；包好",
+    "quote_en": "这是我的包。",
+    "quote_zh": "This is my bag.",
+    "ex_en": "爸爸的包很大，妈妈的包很小。",
+    "ex_zh": "Dad's bag is big, Mom's bag is small.",
+    "part_of_speech": "n./v."
+  },
+  {
+    "word": "饱",
+    "pron": "bǎo",
+    "def_en": "full (from eating)",
+    "def_zh": "吃饱；饱了；很饱",
+    "quote_en": "我吃饱了。",
+    "quote_zh": "I'm full.",
+    "ex_en": "爸爸吃饱了，妈妈也吃饱了。",
+    "ex_zh": "Dad is full, Mom is also full.",
+    "part_of_speech": "adjective"
+  },
+  {
+    "word": "北",
+    "pron": "běi",
+    "def_en": "north",
+    "def_zh": "北方；北京；北边",
+    "quote_en": "北京在中国北方。",
+    "quote_zh": "Beijing is in the north of China.",
+    "ex_en": "爸爸在北京，妈妈在南方。",
+    "ex_zh": "Dad is in Beijing, Mom is in the south.",
+    "part_of_speech": "noun"
+  },
+  {
+    "word": "北京",
+    "pron": "Běijīng",
+    "def_en": "Beijing",
+    "def_zh": "去北京；在北京",
+    "quote_en": "我在北京。",
+    "quote_zh": "I am in Beijing.",
+    "ex_en": "爸爸在北京工作，妈妈在北京学习。",
+    "ex_zh": "Dad works in Beijing, Mom studies in Beijing.",
+    "part_of_speech": "noun"
+  },
+  {
+    "word": "本",
+    "pron": "běn",
+    "def_en": "book; classifier for books",
+    "def_zh": "一本书；本子",
+    "quote_en": "这是一本书。",
+    "quote_zh": "This is a book.",
+    "ex_en": "妈妈看一本书，爸爸看一本书。",
+    "ex_zh": "Mom reads one book, Dad reads one book.",
+    "part_of_speech": "n./m."
+  },
+  {
+    "word": "比",
+    "pron": "bǐ",
+    "def_en": "than; to compare",
+    "def_zh": "比…好；比…大",
+    "quote_en": "我比你大。",
+    "quote_zh": "I am older than you.",
+    "ex_en": "爸爸比妈妈大，妈妈比我大。",
+    "ex_zh": "Dad is older than Mom, Mom is older than me.",
+    "part_of_speech": "preposition"
+  },
+  {
+    "word": "别",
+    "pron": "bié",
+    "def_en": "don't; other",
+    "def_zh": "别去；别人；别客气",
+    "quote_en": "别去那里。",
+    "quote_zh": "Don't go there.",
+    "ex_en": "爸爸说别去，妈妈也说别去。",
+    "ex_zh": "Dad says don't go, Mom also says don't go.",
+    "part_of_speech": "adverb"
+  },
+  {
+    "word": "别人",
+    "pron": "biérén",
+    "def_en": "other people; others",
+    "def_zh": "帮别人；关心别人",
+    "quote_en": "你要关心别人。",
+    "quote_zh": "You should care about others.",
+    "ex_en": "爸爸帮别人，妈妈也帮别人。",
+    "ex_zh": "Dad helps others, Mom also helps others.",
+    "part_of_speech": "noun"
+  },
+  {
+    "word": "宾馆",
+    "pron": "bīnguǎn",
+    "def_en": "hotel",
+    "def_zh": "住宾馆；宾馆房间",
+    "quote_en": "我住在宾馆。",
+    "quote_zh": "I stay in a hotel.",
+    "ex_en": "爸爸住宾馆，妈妈住家里。",
+    "ex_zh": "Dad stays in a hotel, Mom stays at home.",
+    "part_of_speech": "noun"
+  },
+  {
+    "word": "不",
+    "pron": "bù",
+    "def_en": "no; not",
+    "def_zh": "不好；不吃；不去",
+    "quote_en": "我不喝茶。",
+    "quote_zh": "I don't drink tea.",
+    "ex_en": "我爱喝茶，但爸爸不爱喝茶。",
+    "ex_zh": "I love drinking tea, but Dad doesn't love drinking tea.",
+    "part_of_speech": "adverb"
+  },
+  {
+    "word": "不客气",
+    "pron": "bùkèqi",
+    "def_en": "you're welcome",
+    "def_zh": "别客气；不用客气",
+    "quote_en": "不客气！",
+    "quote_zh": "You're welcome!",
+    "ex_en": "爸爸说不客气，妈妈也说不客气。",
+    "ex_zh": "Dad says you're welcome, Mom also says you're welcome.",
+    "part_of_speech": "phrase"
+  },
+  {
+    "word": "菜",
+    "pron": "cài",
+    "def_en": "dish; vegetable",
+    "def_zh": "买菜；做菜；吃菜",
+    "quote_en": "我喜欢吃菜。",
+    "quote_zh": "I like eating vegetables.",
+    "ex_en": "爸爸买菜，妈妈做菜。",
+    "ex_zh": "Dad buys vegetables, Mom cooks.",
+    "part_of_speech": "noun"
+  },
+  {
+    "word": "茶",
+    "pron": "chá",
+    "def_en": "tea",
+    "def_zh": "喝茶；一杯茶",
+    "quote_en": "我喜欢喝茶。",
+    "quote_zh": "I like drinking tea.",
+    "ex_en": "爸爸爱喝茶，妈妈爱喝水。",
+    "ex_zh": "Dad loves drinking tea, Mom loves drinking water.",
+    "part_of_speech": "noun"
+  },
+  {
+    "word": "差",
+    "pron": "chà",
+    "def_en": "bad; poor; lacking",
+    "def_zh": "差一点；差不多；很差",
+    "quote_en": "这个菜很差。",
+    "quote_zh": "This dish is bad.",
+    "ex_en": "爸爸说菜差，妈妈也说菜差。",
+    "ex_zh": "Dad says the dish is bad, Mom also says the dish is bad.",
+    "part_of_speech": "adjective"
+  },
+  {
+    "word": "长",
+    "pron": "cháng",
+    "def_en": "long",
+    "def_zh": "很长；长短；长城",
+    "quote_en": "这条路很长。",
+    "quote_zh": "This road is very long.",
+    "ex_en": "爸爸的路很长，妈妈的路很短。",
+    "ex_zh": "Dad's road is long, Mom's road is short.",
+    "part_of_speech": "adjective"
+  },
+  {
+    "word": "唱歌",
+    "pron": "chànggē",
+    "def_en": "to sing",
+    "def_zh": "喜欢唱歌；唱一首歌",
+    "quote_en": "我喜欢唱歌。",
+    "quote_zh": "I like singing.",
+    "ex_en": "爸爸唱歌，妈妈也唱歌。",
+    "ex_zh": "Dad sings, Mom also sings.",
+    "part_of_speech": "verb"
+  },
+  {
+    "word": "车",
+    "pron": "chē",
+    "def_en": "car; vehicle",
+    "def_zh": "开车；坐车",
+    "quote_en": "爸爸开车。",
+    "quote_zh": "Dad drives.",
+    "ex_en": "爸爸开车，妈妈坐车。",
+    "ex_zh": "Dad drives the car, Mom rides in the car.",
+    "part_of_speech": "noun"
+  },
+  {
+    "word": "成",
+    "pron": "chéng",
+    "def_en": "to become; to succeed",
+    "def_zh": "成为；成功；完成",
+    "quote_en": "他成了老师。",
+    "quote_zh": "He became a teacher.",
+    "ex_en": "爸爸成了老师，妈妈成了医生。",
+    "ex_zh": "Dad became a teacher, Mom became a doctor.",
+    "part_of_speech": "verb"
+  },
+  {
+    "word": "城",
+    "pron": "chéng",
+    "def_en": "city",
+    "def_zh": "城市；城里；进城",
+    "quote_en": "北京是城市。",
+    "quote_zh": "Beijing is a city.",
+    "ex_en": "爸爸在城里，妈妈在城外。",
+    "ex_zh": "Dad is in the city, Mom is outside the city.",
+    "part_of_speech": "noun"
+  },
+  {
+    "word": "吃",
+    "pron": "chī",
+    "def_en": "to eat",
+    "def_zh": "吃饭；吃水果",
+    "quote_en": "我吃饭了。",
+    "quote_zh": "I have eaten.",
+    "ex_en": "爸爸吃饭，妈妈也吃饭。",
+    "ex_zh": "Dad eats, Mom also eats.",
+    "part_of_speech": "verb"
+  },
+  {
+    "word": "出",
+    "pron": "chū",
+    "def_en": "to go out; to leave",
+    "def_zh": "出去；出门；出现",
+    "quote_en": "我出门了。",
+    "quote_zh": "I went out.",
+    "ex_en": "爸爸出门，妈妈在家。",
+    "ex_zh": "Dad goes out, Mom stays home.",
+    "part_of_speech": "verb"
+  },
+  {
+    "word": "穿",
+    "pron": "chuān",
+    "def_en": "to wear; to put on",
+    "def_zh": "穿衣服；穿鞋",
+    "quote_en": "我穿衣服。",
+    "quote_zh": "I put on clothes.",
+    "ex_en": "爸爸穿衣服，妈妈也穿衣服。",
+    "ex_zh": "Dad puts on clothes, Mom also puts on clothes.",
+    "part_of_speech": "verb"
+  },
+  {
+    "word": "船",
+    "pron": "chuán",
+    "def_en": "boat; ship",
+    "def_zh": "坐船；小船",
+    "quote_en": "我坐船去。",
+    "quote_zh": "I go by boat.",
+    "ex_en": "爸爸坐船，妈妈坐车。",
+    "ex_zh": "Dad goes by boat, Mom goes by car.",
+    "part_of_speech": "noun"
+  },
+  {
+    "word": "次",
+    "pron": "cì",
+    "def_en": "time (measure word)",
+    "def_zh": "一次；两次；这次",
+    "quote_en": "我去过一次。",
+    "quote_zh": "I went once.",
+    "ex_en": "爸爸去一次，妈妈去两次。",
+    "ex_zh": "Dad goes once, Mom goes twice.",
+    "part_of_speech": "m."
+  },
+  {
+    "word": "从",
+    "pron": "cóng",
+    "def_en": "from",
+    "def_zh": "从…来；从…到",
+    "quote_en": "我从北京来。",
+    "quote_zh": "I come from Beijing.",
+    "ex_en": "爸爸从北京来，妈妈从上海来。",
+    "ex_zh": "Dad comes from Beijing, Mom comes from Shanghai.",
+    "part_of_speech": "preposition"
+  },
+  {
+    "word": "错",
+    "pron": "cuò",
+    "def_en": "wrong; mistaken",
+    "def_zh": "错了；出错；不错",
+    "quote_en": "你错了。",
+    "quote_zh": "You are wrong.",
+    "ex_en": "爸爸错了，妈妈也错了。",
+    "ex_zh": "Dad is wrong, Mom is also wrong.",
+    "part_of_speech": "adjective"
+  },
+  {
+    "word": "打",
+    "pron": "dǎ",
+    "def_en": "to hit; to call; to play",
+    "def_zh": "打电话；打球；打开",
+    "quote_en": "我打电话。",
+    "quote_zh": "I make a phone call.",
+    "ex_en": "爸爸打电话，妈妈打球。",
+    "ex_zh": "Dad makes a phone call, Mom plays ball.",
+    "part_of_speech": "verb"
+  },
+  {
+    "word": "打电话",
+    "pron": "dǎ diànhuà",
+    "def_en": "to make a phone call",
+    "def_zh": "给…打电话",
+    "quote_en": "我给爸爸打电话。",
+    "quote_zh": "I call Dad.",
+    "ex_en": "爸爸给妈妈打电话，妈妈给爸爸打电话。",
+    "ex_zh": "Dad calls Mom, Mom calls Dad.",
+    "part_of_speech": "verb"
+  },
+  {
+    "word": "大",
+    "pron": "dà",
+    "def_en": "big; large",
+    "def_zh": "大人；大学生；大门",
+    "quote_en": "这个杯子很大。",
+    "quote_zh": "This cup is very big.",
+    "ex_en": "爸爸是大人，我也快长大了。",
+    "ex_zh": "Dad is an adult, I am also almost grown up.",
+    "part_of_speech": "adjective"
+  },
+  {
+    "word": "大家",
+    "pron": "dàjiā",
+    "def_en": "everyone; everybody",
+    "def_zh": "大家好；大家一起来",
+    "quote_en": "大家好！",
+    "quote_zh": "Hello everyone!",
+    "ex_en": "爸爸问大家好，妈妈也问大家好。",
+    "ex_zh": "Dad says hello to everyone, Mom also says hello to everyone.",
+    "part_of_speech": "noun"
+  },
+  {
+    "word": "大学生",
+    "pron": "dàxuéshēng",
+    "def_en": "university student",
+    "def_zh": "我是大学生",
+    "quote_en": "我是大学生。",
+    "quote_zh": "I am a university student.",
+    "ex_en": "爸爸是大学生，妈妈也是大学生。",
+    "ex_zh": "Dad is a university student, Mom is also a university student.",
+    "part_of_speech": "noun"
+  },
+  {
+    "word": "单",
+    "pron": "dān",
+    "def_en": "single; only",
+    "def_zh": "单子；简单；单身",
+    "quote_en": "这个很简单。",
+    "quote_zh": "This is very simple.",
+    "ex_en": "爸爸说简单，妈妈也觉得简单。",
+    "ex_zh": "Dad says it's simple, Mom also thinks it's simple.",
+    "part_of_speech": "adjective"
+  },
+  {
+    "word": "但",
+    "pron": "dàn",
+    "def_en": "but; yet",
+    "def_zh": "但是；不但",
+    "quote_en": "我想去，但没时间。",
+    "quote_zh": "I want to go, but I don't have time.",
+    "ex_en": "爸爸想去，但妈妈不想去。",
+    "ex_zh": "Dad wants to go, but Mom doesn't want to go.",
+    "part_of_speech": "conjunction"
+  },
+  {
+    "word": "但是",
+    "pron": "dànshì",
+    "def_en": "but; however",
+    "def_zh": "但是…",
+    "quote_en": "我喜欢喝茶，但是不喜欢咖啡。",
+    "quote_zh": "I like tea, but I don't like coffee.",
+    "ex_en": "爸爸喜欢茶，但是妈妈喜欢咖啡。",
+    "ex_zh": "Dad likes tea, but Mom likes coffee.",
+    "part_of_speech": "conjunction"
+  },
+  {
+    "word": "到",
+    "pron": "dào",
+    "def_en": "to arrive; to go to",
+    "def_zh": "到学校；到家；到北京",
+    "quote_en": "我到家了。",
+    "quote_zh": "I arrived home.",
+    "ex_en": "爸爸到家，妈妈也到家。",
+    "ex_zh": "Dad arrives home, Mom also arrives home.",
+    "part_of_speech": "verb"
+  },
+  {
+    "word": "的",
+    "pron": "de",
+    "def_en": "possessive particle",
+    "def_zh": "我的；你的；他的",
+    "quote_en": "这是我的书。",
+    "quote_zh": "This is my book.",
+    "ex_en": "爸爸的书很大，妈妈的书很小。",
+    "ex_zh": "Dad's book is big, Mom's book is small.",
+    "part_of_speech": "part."
+  },
+  {
+    "word": "等",
+    "pron": "děng",
+    "def_en": "to wait",
+    "def_zh": "等等；等一下；等车",
+    "quote_en": "请等一下。",
+    "quote_zh": "Please wait a moment.",
+    "ex_en": "爸爸等一下，妈妈也等一下。",
+    "ex_zh": "Dad waits a moment, Mom also waits a moment.",
+    "part_of_speech": "verb"
+  },
+  {
+    "word": "低",
+    "pron": "dī",
+    "def_en": "low",
+    "def_zh": "低价格；低头；很低",
+    "quote_en": "价格很低。",
+    "quote_zh": "The price is very low.",
+    "ex_en": "爸爸说价格低，妈妈也觉得低。",
+    "ex_zh": "Dad says the price is low, Mom also thinks it's low.",
+    "part_of_speech": "adjective"
+  },
+  {
+    "word": "第",
+    "pron": "dì",
+    "def_en": "prefix for ordinal numbers",
+    "def_zh": "第一；第二；第三",
+    "quote_en": "我是第一名。",
+    "quote_zh": "I am number one.",
+    "ex_en": "爸爸是第一名，妈妈是第二名。",
+    "ex_zh": "Dad is first, Mom is second.",
+    "part_of_speech": "pref."
+  },
+  {
+    "word": "点",
+    "pron": "diǎn",
+    "def_en": "point; o'clock; to order",
+    "def_zh": "三点；一点；点菜",
+    "quote_en": "现在三点。",
+    "quote_zh": "It's three o'clock.",
+    "ex_en": "爸爸三点到，妈妈两点到。",
+    "ex_zh": "Dad arrives at three, Mom arrives at two.",
+    "part_of_speech": "n./v."
+  },
+  {
+    "word": "电脑",
+    "pron": "diànnǎo",
+    "def_en": "computer",
+    "def_zh": "用电脑；电脑游戏",
+    "quote_en": "我用电脑工作。",
+    "quote_zh": "I work on the computer.",
+    "ex_en": "爸爸用电脑，妈妈也用电脑。",
+    "ex_zh": "Dad uses the computer, Mom also uses the computer.",
+    "part_of_speech": "noun"
+  },
+  {
+    "word": "电视",
+    "pron": "diànshì",
+    "def_en": "television",
+    "def_zh": "看电视；开电视",
+    "quote_en": "我看电视。",
+    "quote_zh": "I watch TV.",
+    "ex_en": "爸爸看电视，妈妈看书。",
+    "ex_zh": "Dad watches TV, Mom reads a book.",
+    "part_of_speech": "noun"
+  },
+  {
+    "word": "电影",
+    "pron": "diànyǐng",
+    "def_en": "movie",
+    "def_zh": "看电影；电影票",
+    "quote_en": "我喜欢看电影。",
+    "quote_zh": "I like watching movies.",
+    "ex_en": "爸爸看电影，妈妈也看电影。",
+    "ex_zh": "Dad watches a movie, Mom also watches a movie.",
+    "part_of_speech": "noun"
+  },
+  {
+    "word": "店",
+    "pron": "diàn",
+    "def_en": "shop; store",
+    "def_zh": "商店；书店；饭店",
+    "quote_en": "我去商店。",
+    "quote_zh": "I go to the shop.",
+    "ex_en": "爸爸去商店，妈妈去书店。",
+    "ex_zh": "Dad goes to the shop, Mom goes to the bookstore.",
+    "part_of_speech": "noun"
+  },
+  {
+    "word": "东西",
+    "pron": "dōngxi",
+    "def_en": "thing; object",
+    "def_zh": "买东西；东西很多",
+    "quote_en": "我买东西。",
+    "quote_zh": "I buy things.",
+    "ex_en": "爸爸买东西，妈妈也买东西。",
+    "ex_zh": "Dad buys things, Mom also buys things.",
+    "part_of_speech": "noun"
+  },
+  {
+    "word": "懂",
+    "pron": "dǒng",
+    "def_en": "to understand",
+    "def_zh": "懂吗；懂了；听不懂",
+    "quote_en": "我懂了。",
+    "quote_zh": "I understand.",
+    "ex_en": "爸爸懂了，妈妈也懂了。",
+    "ex_zh": "Dad understands, Mom also understands.",
+    "part_of_speech": "verb"
+  },
+  {
+    "word": "都",
+    "pron": "dōu",
+    "def_en": "all; both",
+    "def_zh": "都是；都有；都不",
+    "quote_en": "我们都爱喝茶。",
+    "quote_zh": "We all love drinking tea.",
+    "ex_en": "爸爸都爱喝茶，妈妈也爱喝茶。",
+    "ex_zh": "Dad all loves tea, Mom also loves tea.",
+    "part_of_speech": "adverb"
+  },
+  {
+    "word": "读",
+    "pron": "dú",
+    "def_en": "to read",
+    "def_zh": "读书；读报；朗读",
+    "quote_en": "我读书。",
+    "quote_zh": "I read.",
+    "ex_en": "爸爸读书，妈妈也读书。",
+    "ex_zh": "Dad reads, Mom also reads.",
+    "part_of_speech": "verb"
+  },
+  {
+    "word": "读书",
+    "pron": "dúshū",
+    "def_en": "to read; to study",
+    "def_zh": "喜欢读书；读书学习",
+    "quote_en": "我喜欢读书。",
+    "quote_zh": "I like reading.",
+    "ex_en": "爸爸读书，妈妈也读书。",
+    "ex_zh": "Dad reads, Mom also reads.",
+    "part_of_speech": "verb"
+  },
+  {
+    "word": "对",
+    "pron": "duì",
+    "def_en": "correct; to; for",
+    "def_zh": "对不对；对了；对…说",
+    "quote_en": "你说得对。",
+    "quote_zh": "You are right.",
+    "ex_en": "爸爸说对，妈妈也说对。",
+    "ex_zh": "Dad says correct, Mom also says correct.",
+    "part_of_speech": "adj./prep."
+  },
+  {
+    "word": "对不起",
+    "pron": "duìbuqǐ",
+    "def_en": "sorry",
+    "def_zh": "说对不起",
+    "quote_en": "对不起，我错了。",
+    "quote_zh": "Sorry, I was wrong.",
+    "ex_en": "爸爸说对不起，妈妈也说对不起。",
+    "ex_zh": "Dad says sorry, Mom also says sorry.",
+    "part_of_speech": "phrase"
+  },
+  {
+    "word": "多",
+    "pron": "duō",
+    "def_en": "many; much",
+    "def_zh": "很多；多少；多大",
+    "quote_en": "很多人。",
+    "quote_zh": "Many people.",
+    "ex_en": "爸爸有很多书，妈妈有很多茶。",
+    "ex_zh": "Dad has many books, Mom has much tea.",
+    "part_of_speech": "adjective"
+  },
+  {
+    "word": "多少",
+    "pron": "duōshǎo",
+    "def_en": "how many; how much",
+    "def_zh": "多少人；多少钱",
+    "quote_en": "多少钱？",
+    "quote_zh": "How much is it?",
+    "ex_en": "爸爸问多少钱，妈妈也问多少钱。",
+    "ex_zh": "Dad asks how much, Mom also asks how much.",
+    "part_of_speech": "pronoun"
+  },
+  {
+    "word": "儿子",
+    "pron": "érzi",
+    "def_en": "son",
+    "def_zh": "我的儿子；儿子女儿",
+    "quote_en": "我儿子五岁了。",
+    "quote_zh": "My son is five years old.",
+    "ex_en": "爸爸爱儿子，妈妈也爱儿子。",
+    "ex_zh": "Dad loves his son, Mom also loves her son.",
+    "part_of_speech": "noun"
+  },
+  {
+    "word": "二",
+    "pron": "èr",
+    "def_en": "two",
+    "def_zh": "二个；第二；二点",
+    "quote_en": "我有二个苹果。",
+    "quote_zh": "I have two apples.",
+    "ex_en": "爸爸有二个苹果，妈妈有二个苹果。",
+    "ex_zh": "Dad has two apples, Mom has two apples.",
+    "part_of_speech": "num."
+  },
+  {
+    "word": "发",
+    "pron": "fā",
+    "def_en": "to send; to issue",
+    "def_zh": "发信；发现；发生",
+    "quote_en": "我发信。",
+    "quote_zh": "I send a letter.",
+    "ex_en": "爸爸发信，妈妈收信。",
+    "ex_zh": "Dad sends letters, Mom receives letters.",
+    "part_of_speech": "verb"
+  },
+  {
+    "word": "饭",
+    "pron": "fàn",
+    "def_en": "rice; meal",
+    "def_zh": "吃饭；做饭；饭店",
+    "quote_en": "我吃饭了。",
+    "quote_zh": "I have eaten.",
+    "ex_en": "爸爸吃饭，妈妈做饭。",
+    "ex_zh": "Dad eats, Mom cooks.",
+    "part_of_speech": "noun"
+  },
+  {
+    "word": "饭店",
+    "pron": "fàndiàn",
+    "def_en": "restaurant; hotel",
+    "def_zh": "去饭店；饭店吃饭",
+    "quote_en": "我们去饭店吃饭。",
+    "quote_zh": "We eat at a restaurant.",
+    "ex_en": "爸爸去饭店，妈妈在家做饭。",
+    "ex_zh": "Dad goes to the restaurant, Mom cooks at home.",
+    "part_of_speech": "noun"
+  },
+  {
+    "word": "饭馆",
+    "pron": "fànguǎn",
+    "def_en": "restaurant",
+    "def_zh": "小饭馆；饭馆吃饭",
+    "quote_en": "这家饭馆很好。",
+    "quote_zh": "This restaurant is very good.",
+    "ex_en": "爸爸说饭馆好，妈妈也觉得好。",
+    "ex_zh": "Dad says the restaurant is good, Mom also thinks it's good.",
+    "part_of_speech": "noun"
+  },
+  {
+    "word": "方",
+    "pron": "fāng",
+    "def_en": "direction; square",
+    "def_zh": "方法；地方；方向",
+    "quote_en": "这是什么地方？",
+    "quote_zh": "What place is this?",
+    "ex_en": "爸爸知道地方，妈妈不知道地方。",
+    "ex_zh": "Dad knows the place, Mom doesn't know the place.",
+    "part_of_speech": "noun"
+  },
+  {
+    "word": "方法",
+    "pron": "fāngfǎ",
+    "def_en": "method; way",
+    "def_zh": "好方法；学习方法",
+    "quote_en": "这是好方法。",
+    "quote_zh": "This is a good method.",
+    "ex_en": "爸爸有好方法，妈妈也有好方法。",
+    "ex_zh": "Dad has a good method, Mom also has a good method.",
+    "part_of_speech": "noun"
+  },
+  {
+    "word": "房",
+    "pron": "fáng",
+    "def_en": "house; room",
+    "def_zh": "房子；房间；买房",
+    "quote_en": "我家有房子。",
+    "quote_zh": "My family has a house.",
+    "ex_en": "爸爸有房子，妈妈有房子。",
+    "ex_zh": "Dad has a house, Mom has a house.",
+    "part_of_speech": "noun"
+  },
+  {
+    "word": "房间",
+    "pron": "fángjiān",
+    "def_en": "room",
+    "def_zh": "大房间；小房间",
+    "quote_en": "这是我的房间。",
+    "quote_zh": "This is my room.",
+    "ex_en": "爸爸在大房间，妈妈在小房间。",
+    "ex_zh": "Dad is in the big room, Mom is in the small room.",
+    "part_of_speech": "noun"
+  },
+  {
+    "word": "非常",
+    "pron": "fēicháng",
+    "def_en": "very; extremely",
+    "def_zh": "非常好；非常高兴",
+    "quote_en": "我非常高兴。",
+    "quote_zh": "I am very happy.",
+    "ex_en": "爸爸非常高兴，妈妈也非常高兴。",
+    "ex_zh": "Dad is very happy, Mom is also very happy.",
+    "part_of_speech": "adverb"
+  },
+  {
+    "word": "飞机",
+    "pron": "fēijī",
+    "def_en": "airplane",
+    "def_zh": "坐飞机；飞机场",
+    "quote_en": "我坐飞机去。",
+    "quote_zh": "I go by plane.",
+    "ex_en": "爸爸坐飞机，妈妈坐火车。",
+    "ex_zh": "Dad goes by plane, Mom goes by train.",
+    "part_of_speech": "noun"
+  },
+  {
+    "word": "分",
+    "pron": "fēn",
+    "def_en": "minute; to divide",
+    "def_zh": "分钟；分开；一分",
+    "quote_en": "等十分钟。",
+    "quote_zh": "Wait ten minutes.",
+    "ex_en": "爸爸等十分钟，妈妈等五分钟。",
+    "ex_zh": "Dad waits ten minutes, Mom waits five minutes.",
+    "part_of_speech": "n./v."
+  },
+  {
+    "word": "分钟",
+    "pron": "fēnzhōng",
+    "def_en": "minute",
+    "def_zh": "几分钟；十分钟",
+    "quote_en": "等几分钟。",
+    "quote_zh": "Wait a few minutes.",
+    "ex_en": "爸爸等十分钟，妈妈等五分钟。",
+    "ex_zh": "Dad waits ten minutes, Mom waits five minutes.",
+    "part_of_speech": "noun"
+  },
+  {
+    "word": "夫人",
+    "pron": "fūrén",
+    "def_en": "wife; madam",
+    "def_zh": "王夫人；夫人好",
+    "quote_en": "夫人好。",
+    "quote_zh": "Hello, Madam.",
+    "ex_en": "爸爸叫夫人，妈妈叫先生。",
+    "ex_zh": "Dad calls her madam, Mom calls him sir.",
+    "part_of_speech": "noun"
+  },
+  {
+    "word": "服务员",
+    "pron": "fúwùyuán",
+    "def_en": "waiter; attendant",
+    "def_zh": "服务员好；叫服务员",
+    "quote_en": "服务员，请来一下。",
+    "quote_zh": "Waiter, please come.",
+    "ex_en": "爸爸叫服务员，妈妈也叫服务员。",
+    "ex_zh": "Dad calls the waiter, Mom also calls the waiter.",
+    "part_of_speech": "noun"
+  },
+  {
+    "word": "父",
+    "pron": "fù",
+    "def_en": "father",
+    "def_zh": "父亲；父母；父子",
+    "quote_en": "我的父亲很好。",
+    "quote_zh": "My father is very good.",
+    "ex_en": "父亲爱儿子，儿子爱父亲。",
+    "ex_zh": "Father loves son, son loves father.",
+    "part_of_speech": "noun"
+  },
+  {
+    "word": "父亲",
+    "pron": "fùqin",
+    "def_en": "father",
+    "def_zh": "我的父亲；父亲节",
+    "quote_en": "我爱我的父亲。",
+    "quote_zh": "I love my father.",
+    "ex_en": "父亲爱母亲，母亲爱父亲。",
+    "ex_zh": "Father loves mother, mother loves father.",
+    "part_of_speech": "noun"
+  },
+  {
+    "word": "干",
+    "pron": "gàn",
+    "def_en": "to do; to work",
+    "def_zh": "干活；干事情",
+    "quote_en": "我干活了。",
+    "quote_zh": "I worked.",
+    "ex_en": "爸爸干活，妈妈也干活。",
+    "ex_zh": "Dad works, Mom also works.",
+    "part_of_speech": "verb"
+  },
+  {
+    "word": "刚",
+    "pron": "gāng",
+    "def_en": "just; recently",
+    "def_zh": "刚刚；刚才；刚好",
+    "quote_en": "我刚到。",
+    "quote_zh": "I just arrived.",
+    "ex_en": "爸爸刚到，妈妈也刚到。",
+    "ex_zh": "Dad just arrived, Mom also just arrived.",
+    "part_of_speech": "adverb"
+  },
+  {
+    "word": "高",
+    "pron": "gāo",
+    "def_en": "tall; high",
+    "def_zh": "很高；高兴；高价",
+    "quote_en": "这个楼很高。",
+    "quote_zh": "This building is very tall.",
+    "ex_en": "爸爸很高，妈妈不高。",
+    "ex_zh": "Dad is tall, Mom is not tall.",
+    "part_of_speech": "adjective"
+  },
+  {
+    "word": "高兴",
+    "pron": "gāoxìng",
+    "def_en": "happy; glad",
+    "def_zh": "很高兴；高兴的事",
+    "quote_en": "我很高兴。",
+    "quote_zh": "I am very happy.",
+    "ex_en": "爸爸很高兴，妈妈也很高兴。",
+    "ex_zh": "Dad is very happy, Mom is also very happy.",
+    "part_of_speech": "adjective"
+  },
+  {
+    "word": "个",
+    "pron": "gè",
+    "def_en": "measure word for general use",
+    "def_zh": "一个人；一个苹果",
+    "quote_en": "一个人。",
+    "quote_zh": "One person.",
+    "ex_en": "爸爸一个人，妈妈一个人。",
+    "ex_zh": "Dad is alone, Mom is alone.",
+    "part_of_speech": "m."
+  },
+  {
+    "word": "给",
+    "pron": "gěi",
+    "def_en": "to give; for",
+    "def_zh": "给我；给你；给他",
+    "quote_en": "给我一本书。",
+    "quote_zh": "Give me a book.",
+    "ex_en": "爸爸给妈妈书，妈妈给爸爸茶。",
+    "ex_zh": "Dad gives Mom a book, Mom gives Dad tea.",
+    "part_of_speech": "v./prep."
+  },
+  {
+    "word": "跟",
+    "pron": "gēn",
+    "def_en": "with; and",
+    "def_zh": "跟我来；跟…一起",
+    "quote_en": "跟我来。",
+    "quote_zh": "Come with me.",
+    "ex_en": "爸爸跟我来，妈妈跟爸爸来。",
+    "ex_zh": "Dad comes with me, Mom comes with Dad.",
+    "part_of_speech": "preposition"
+  },
+  {
+    "word": "更",
+    "pron": "gèng",
+    "def_en": "more; even more",
+    "def_zh": "更好；更大；更多",
+    "quote_en": "这个更好。",
+    "quote_zh": "This is better.",
+    "ex_en": "爸爸更好，妈妈也更好。",
+    "ex_zh": "Dad is better, Mom is also better.",
+    "part_of_speech": "adverb"
+  },
+  {
+    "word": "工作",
+    "pron": "gōngzuò",
+    "def_en": "work; job",
+    "def_zh": "找工作；工作忙",
+    "quote_en": "我工作很忙。",
+    "quote_zh": "I am very busy at work.",
+    "ex_en": "爸爸工作忙，妈妈也工作忙。",
+    "ex_zh": "Dad is busy at work, Mom is also busy at work.",
+    "part_of_speech": "n./v."
+  },
+  {
+    "word": "公",
+    "pron": "gōng",
+    "def_en": "public; male",
+    "def_zh": "公共；公司；公车",
+    "quote_en": "这是公共汽车。",
+    "quote_zh": "This is a public bus.",
+    "ex_en": "爸爸坐公车，妈妈坐地铁。",
+    "ex_zh": "Dad takes the bus, Mom takes the subway.",
+    "part_of_speech": "adjective"
+  },
+  {
+    "word": "公司",
+    "pron": "gōngsī",
+    "def_en": "company",
+    "def_zh": "在公司；公司工作",
+    "quote_en": "我在公司工作。",
+    "quote_zh": "I work at a company.",
+    "ex_en": "爸爸在公司，妈妈也在公司。",
+    "ex_zh": "Dad is at the company, Mom is also at the company.",
+    "part_of_speech": "noun"
+  },
+  {
+    "word": "公园",
+    "pron": "gōngyuán",
+    "def_en": "park",
+    "def_zh": "去公园；公园散步",
+    "quote_en": "我去公园。",
+    "quote_zh": "I go to the park.",
+    "ex_en": "爸爸去公园，妈妈也去公园。",
+    "ex_zh": "Dad goes to the park, Mom also goes to the park.",
+    "part_of_speech": "noun"
+  },
+  {
+    "word": "狗",
+    "pron": "gǒu",
+    "def_en": "dog",
+    "def_zh": "小狗；养狗；狗叫",
+    "quote_en": "我有一只狗。",
+    "quote_zh": "I have a dog.",
+    "ex_en": "爸爸喜欢狗，妈妈也喜欢狗。",
+    "ex_zh": "Dad likes dogs, Mom also likes dogs.",
+    "part_of_speech": "noun"
+  },
+  {
+    "word": "故事",
+    "pron": "gùshi",
+    "def_en": "story",
+    "def_zh": "讲故事；听故事",
+    "quote_en": "我讲一个故事。",
+    "quote_zh": "I tell a story.",
+    "ex_en": "爸爸讲故事，妈妈听故事。",
+    "ex_zh": "Dad tells a story, Mom listens to the story.",
+    "part_of_speech": "noun"
+  },
+  {
+    "word": "关",
+    "pron": "guān",
+    "def_en": "to close; to turn off",
+    "def_zh": "关门；关灯；关心",
+    "quote_en": "请关门。",
+    "quote_zh": "Please close the door.",
+    "ex_en": "爸爸关门，妈妈关灯。",
+    "ex_zh": "Dad closes the door, Mom turns off the light.",
+    "part_of_speech": "verb"
+  }
+];
+
+// ============================================================
+// SYNONYMS/ANTONYMS DATA
+// ============================================================
+const SYNAN = JSON.parse(decodeURIComponent(escape(atob("eyLniLEiOnsic3luIjpbIuWWnOasoiIsIuWWnOeIsSIsIueDreeIsSIsIueIseaKpCJdLCJhbnQiOlsi5oGoIiwi6K6o5Y6MIiwi5Y6M5oG2Il19LCLniLHlpb0iOnsic3luIjpbIuWWnOWlvSIsIuWFtOi2oyIsIuWWnOeIsSJdLCJhbnQiOlsi6K6o5Y6MIiwi5Y6M5oG2Il19LCLlhasiOnsic3luIjpbXSwiYW50IjpbXX0sIueIuOeIuCI6eyJzeW4iOlsi54i25LqyIiwi54i5Iiwi54i4Il0sImFudCI6WyLlpojlpogiLCLmr43kurIiXX0sIuWQpyI6eyJzeW4iOltdLCJhbnQiOltdfSwi55m9Ijp7InN5biI6WyLnmb3oibIiLCLpm6rnmb0iXSwiYW50IjpbIum7kSIsIuaalyJdfSwi55m95aSpIjp7InN5biI6WyLnmb3ml6UiLCLml6Xpl7QiXSwiYW50IjpbIum7keWknCIsIuaZmuS4iiJdfSwi55m+Ijp7InN5biI6W10sImFudCI6W119LCLnj60iOnsic3luIjpbIuePree6pyIsIue7hCJdLCJhbnQiOltdfSwi5Y2KIjp7InN5biI6WyLkuIDljYoiLCLljYrovrkiXSwiYW50IjpbIuWFqCIsIuaVtCJdfSwi5YqeIjp7InN5biI6WyLlip7nkIYiLCLlpITnkIYiLCLlgZoiXSwiYW50IjpbXX0sIuWKnuazlSI6eyJzeW4iOlsi5pa55rOVIiwi5pa55byPIiwi5o6q5pa9Il0sImFudCI6W119LCLlip7lhazlrqQiOnsic3luIjpbIuWKnuWFrOWkhCIsIuWGmeWtl+alvCJdLCJhbnQiOltdfSwi5biu5b+ZIjp7InN5biI6WyLluK7liqkiLCLljY/liqkiLCLluK4iXSwiYW50IjpbIua3u+S5sSIsIuWmqOeijSJdfSwi5YyFIjp7InN5biI6WyLooovlrZAiLCLljIXoo7kiXSwiYW50IjpbXX0sIumlsSI6eyJzeW4iOlsi5ZCD6aWxIiwi5ruh6LazIl0sImFudCI6WyLppb8iLCLppaXppb8iXX0sIuWMlyI6eyJzeW4iOlsi5YyX5pa5Il0sImFudCI6WyLljZciXX0sIuWMl+S6rCI6eyJzeW4iOlsi6aaW6YO9Iiwi5Lqs5Z+OIl0sImFudCI6W119LCLmnKwiOnsic3luIjpbIuWGjCIsIuWNtyJdLCJhbnQiOltdfSwi5q+UIjp7InN5biI6WyLmr5TovoMiLCLnm7jmr5QiXSwiYW50IjpbXX0sIuWIqyI6eyJzeW4iOlsi5LiN6KaBIiwi5Yu/Il0sImFudCI6WyLopoEiLCLlvpciXX0sIuWIq+S6uiI6eyJzeW4iOlsi5LuW5Lq6Iiwi5peB5Lq6Il0sImFudCI6WyLoh6rlt7EiLCLmnKzkuroiXX0sIuWuvummhiI6eyJzeW4iOlsi6YWS5bqXIiwi5peF6aaGIiwi6aWt5bqXIl0sImFudCI6W119LCLkuI0iOnsic3luIjpbIuayoSIsIuacqiIsIuWQpiJdLCJhbnQiOlsi5pivIiwi5a+5Iiwi5aW9Il19LCLkuI3lrqLmsJQiOnsic3luIjpbIuWIq+WuouawlCIsIuS4jeeUqOiwoiJdLCJhbnQiOlsi6LCi6LCiIl19LCLoj5wiOnsic3luIjpbIuiUrOiPnCIsIuiPnOiCtCJdLCJhbnQiOltdfSwi6Iy2Ijp7InN5biI6WyLojLbmsLQiLCLojJciXSwiYW50IjpbXX0sIuW3riI6eyJzeW4iOlsi5LiN5aW9Iiwi5Z2PIiwi5beu5YqyIl0sImFudCI6WyLlpb0iLCLmo5IiXX0sIumVvyI6eyJzeW4iOlsi6ZW/5LmFIiwi5ryr6ZW/Il0sImFudCI6WyLnn60iLCLnn63mmoIiXX0sIuWUseatjCI6eyJzeW4iOlsi5q2M5ZSxIiwi5ryU5ZSxIl0sImFudCI6W119LCLovaYiOnsic3luIjpbIuaxvei9piIsIui9pui+hiIsIui9puWtkCJdLCJhbnQiOltdfSwi5oiQIjp7InN5biI6WyLmiJDkuLoiLCLlj5jmiJAiLCLmiJDlip8iXSwiYW50IjpbIui0pSIsIuWksei0pSJdfSwi5Z+OIjp7InN5biI6WyLln47luIIiLCLpg73luIIiXSwiYW50IjpbIuS5oSIsIuS5oeadkSJdfSwi5ZCDIjp7InN5biI6WyLpo58iLCLnlKgiLCLov5vppJAiXSwiYW50IjpbIuWQkCIsIumlvyJdfSwi5Ye6Ijp7InN5biI6WyLlh7rljrsiLCLnprvlvIAiLCLlpJblh7oiXSwiYW50IjpbIui/myIsIuWFpSIsIuWbniJdfSwi56m/Ijp7InN5biI6WyLnqb/miLQiLCLnnYDoo4UiXSwiYW50IjpbIuiEsSJdfSwi6Ii5Ijp7InN5biI6WyLoiLnlj6oiLCLova7oiLkiXSwiYW50IjpbXX0sIuasoSI6eyJzeW4iOlsi5ZueIiwi6YGNIiwi6LafIl0sImFudCI6W119LCLku44iOnsic3luIjpbIuiHqiIsIueUsSJdLCJhbnQiOlsi5YiwIiwi6IezIl19LCLplJkiOnsic3luIjpbIumUmeivryIsIuS4jeWvuSJdLCJhbnQiOlsi5a+5Iiwi5q2j56GuIl19LCLmiZMiOnsic3luIjpbIuWHu+aJkyIsIuaLqOaJkyIsIueOqeiAjSJdLCJhbnQiOltdfSwi5omT55S16K+dIjp7InN5biI6WyLpgJror50iLCLoh7TnlLUiXSwiYW50IjpbXX0sIuWkpyI6eyJzeW4iOlsi5beo5aSnIiwi5bqe5aSnIiwi5a6P5aSnIl0sImFudCI6WyLlsI8iLCLnu4blsI8iLCLlvq7lsI8iXX0sIuWkp+WutiI6eyJzeW4iOlsi5LyX5Lq6Iiwi5ZCE5L2NIiwi5YWo5L2TIl0sImFudCI6WyLkuKrkuroiLCLoh6rlt7EiXX0sIuWkp+WtpueUnyI6eyJzeW4iOlsi6auY5qCh55SfIiwi5a2m5a2QIl0sImFudCI6WyLlsI/lrabnlJ8iLCLkuK3lrabnlJ8iXX0sIuWNlSI6eyJzeW4iOlsi5Y2V5LiAIiwi566A5Y2VIiwi5Y2V54usIl0sImFudCI6WyLlj4wiLCLlpI3mnYIiXX0sIuS9hiI6eyJzeW4iOlsi5L2G5pivIiwi5Y+v5pivIiwi54S26ICMIl0sImFudCI6W119LCLkvYbmmK8iOnsic3luIjpbIuS9hiIsIuWPr+aYryIsIueEtuiAjCJdLCJhbnQiOltdfSwi5YiwIjp7InN5biI6WyLliLDovr4iLCLmirXovr4iXSwiYW50IjpbIuemuyIsIuemu+W8gCJdfSwi55qEIjp7InN5biI6W10sImFudCI6W119LCLnrYkiOnsic3luIjpbIuetieWAmSIsIuetieW+hSJdLCJhbnQiOltdfSwi5L2OIjp7InN5biI6WyLnn64iLCLkvY7kuIsiXSwiYW50IjpbIumrmCJdfSwi56ysIjp7InN5biI6W10sImFudCI6W119LCLngrkiOnsic3luIjpbIueCuemSnyIsIuS4gOeCuSJdLCJhbnQiOltdfSwi55S16ISRIjp7InN5biI6WyLorqHnrpfmnLoiLCLlvq7mnLoiXSwiYW50IjpbXX0sIueUteinhiI6eyJzeW4iOlsi55S16KeG5py6Il0sImFudCI6W119LCLnlLXlvbEiOnsic3luIjpbIuW9seeJhyIsIueJh+WtkCJdLCJhbnQiOltdfSwi5bqXIjp7InN5biI6WyLllYblupciLCLlupfpk7oiLCLpk7rlrZAiXSwiYW50IjpbXX0sIuS4nOilvyI6eyJzeW4iOlsi54mp5ZOBIiwi54mp5Lu2Iiwi5LqL54mpIl0sImFudCI6W119LCLmh4IiOnsic3luIjpbIuaYjueZvSIsIueQhuinoyIsIuS6huinoyJdLCJhbnQiOlsi5LiN5oeCIiwi6L+35oORIl19LCLpg70iOnsic3luIjpbIuWFqCIsIuWFqOmDqCIsIueahiJdLCJhbnQiOltdfSwi6K+7Ijp7InN5biI6WyLpmIXor7siLCLlv7UiXSwiYW50IjpbXX0sIuivu+S5piI6eyJzeW4iOlsi6ZiF6K+7Iiwi5a2m5LmgIiwi5b+15LmmIl0sImFudCI6W119LCLlr7kiOnsic3luIjpbIuato+ehriIsIuayoemUmSJdLCJhbnQiOlsi6ZSZIiwi5LiN5a+5Il19LCLlr7nkuI3otbciOnsic3luIjpbIuaKseatiSIsIuS4jeWlveaEj+aAnSJdLCJhbnQiOltdfSwi5aSaIjp7InN5biI6WyLorrjlpJoiLCLlpKfph48iXSwiYW50IjpbIuWwkSIsIuWwkemHjyJdfSwi5aSa5bCRIjp7InN5biI6WyLlh6AiLCLlh6DlpJoiXSwiYW50IjpbXX0sIuWEv+WtkCI6eyJzeW4iOlsi5a2p5YS/Il0sImFudCI6WyLlpbPlhL8iXX0sIuS6jCI6eyJzeW4iOlsi5LikIl0sImFudCI6W119LCLlj5EiOnsic3luIjpbIuWPkemAgSIsIuWvhOWHuiJdLCJhbnQiOlsi5pS2Iiwi5o6l5pS2Il19LCLppa0iOnsic3luIjpbIuexs+mlrSIsIumkkCJdLCJhbnQiOltdfSwi6aWt5bqXIjp7InN5biI6WyLppJDljoUiLCLphZLmpbwiLCLphZLlupciXSwiYW50IjpbXX0sIumlremmhiI6eyJzeW4iOlsi6aSQ6aaGIiwi6aWt5bqXIl0sImFudCI6W119LCLmlrkiOnsic3luIjpbIuaWueWQkSIsIuWcsOaWuSJdLCJhbnQiOltdfSwi5pa55rOVIjp7InN5biI6WyLlip7ms5UiLCLmlrnlvI8iLCLmiYvmrrUiXSwiYW50IjpbXX0sIuaIvyI6eyJzeW4iOlsi5oi/5a2QIiwi5oi/5bGLIl0sImFudCI6W119LCLmiL/pl7QiOnsic3luIjpbIuWxi+WtkCIsIuWNp+WupCJdLCJhbnQiOltdfSwi6Z2e5bi4Ijp7InN5biI6WyLljYHliIYiLCLnibnliKsiLCLmnoHlhbYiXSwiYW50IjpbIueojeW+riIsIueVpeW+riJdfSwi6aOe5py6Ijp7InN5biI6WyLlrqLmnLoiLCLpo57mnLrmnLoiXSwiYW50IjpbXX0sIuWIhiI6eyJzeW4iOlsi5YiG6ZKfIiwi5YiG5byAIl0sImFudCI6WyLlkIgiXX0sIuWIhumSnyI6eyJzeW4iOlsi5YiGIl0sImFudCI6W119LCLlpKvkuroiOnsic3luIjpbIuWkquWkqiIsIuWmu+WtkCJdLCJhbnQiOlsi5YWI55SfIiwi5LiI5aSrIl19LCLmnI3liqHlkZgiOnsic3luIjpbIuacjeWKoeeUnyIsIuS+jeiAhSJdLCJhbnQiOltdfSwi54i2Ijp7InN5biI6WyLniLbkurIiLCLniLjniLgiXSwiYW50IjpbIuavjSIsIuavjeS6siJdfSwi54i25LqyIjp7InN5biI6WyLniLjniLgiLCLniLkiXSwiYW50IjpbIuavjeS6siIsIuWmiOWmiCJdfSwi5bmyIjp7InN5biI6WyLlgZoiLCLku47kuosiLCLlubLmtLsiXSwiYW50IjpbXX0sIuWImiI6eyJzeW4iOlsi5Yia5YiaIiwi5Yia5omNIl0sImFudCI6W119LCLpq5giOnsic3luIjpbIumrmOWkpyIsIumrmOmrmCJdLCJhbnQiOlsi5L2OIiwi55+uIl19LCLpq5jlhbQiOnsic3luIjpbIuW/q+S5kCIsIuW8gOW/gyIsIuaEieW/qyJdLCJhbnQiOlsi6Zq+6L+HIiwi5Lyk5b+DIiwi5LiN6auY5YW0Il19LCLkuKoiOnsic3luIjpbXSwiYW50IjpbXX0sIue7mSI6eyJzeW4iOlsi57uZ5LqIIiwi6YCB57uZIl0sImFudCI6WyLmlLYiLCLmi78iXX0sIui3nyI6eyJzeW4iOlsi5ZKMIiwi5LiOIiwi5ZCMIl0sImFudCI6W119LCLmm7QiOnsic3luIjpbIuabtOWKoCIsIui2iuWPkSJdLCJhbnQiOltdfSwi5bel5L2cIjp7InN5biI6WyLkuIrnj60iLCLogYzkuJoiLCLmtLvlhL8iXSwiYW50IjpbIuS8keaBryIsIuS8kemXsiJdfSwi5YWsIjp7InN5biI6WyLlhazlhbEiLCLlhaznlKgiXSwiYW50IjpbIuengSJdfSwi5YWs5Y+4Ijp7InN5biI6WyLkvIHkuJoiLCLljZXkvY0iXSwiYW50IjpbXX0sIuWFrOWbrSI6eyJzeW4iOlsi5Zut5p6XIiwi5ri45ZutIl0sImFudCI6W119LCLni5ciOnsic3luIjpbIueKrCIsIueLl+eLlyJdLCJhbnQiOlsi54yrIl19LCLmlYXkuosiOnsic3luIjpbIuS8oOivtCIsIuS6i+WEvyJdLCJhbnQiOltdfSwi5YWzIjp7InN5biI6WyLlhbPpl60iLCLlkIjkuIoiXSwiYW50IjpbIuW8gCIsIuaJk+W8gCJdfX0="))));
+
+// ============================================================
+// REST OF THE JAVASCRIPT (DO NOT MODIFY)
+// ============================================================
+const LS = {
+  get(key, fallback) {
+    try { const v = localStorage.getItem(key); return v !== null ? v : fallback; }
+    catch(e) { return fallback; }
+  },
+  set(key, val) {
+    try { localStorage.setItem(key, val); } catch(e) {}
+  }
+};
+
+function buildGroups() {
+  const n = VOCAB.length;
+  const wordsPerGroup = 10;
+  const numGroups = Math.ceil(n / wordsPerGroup);
+  const groups = [];
+  
+  for (let i = 0; i < numGroups; i++) {
+    const start = i * wordsPerGroup;
+    const end = Math.min(start + wordsPerGroup, n);
+    groups.push(VOCAB.slice(start, end));
+  }
+  
+  return groups;
+}
+
+const GROUPS = buildGroups();
+const NUM_GROUPS = GROUPS.length;
+
+const S = {
+  gIdx: 0,
+  wIdx: 0,
+  sentTab: 0,
+  starred: new Set(JSON.parse(LS.get('wtb_starred', '[]'))),
+  sentences: JSON.parse(LS.get('wtb_sentences', '{}')),
+  quiz: null,
+  quizDone: {},
+  sqQuiz: null,
+};
+
+function saveStarred() { LS.set('wtb_starred', JSON.stringify([...S.starred])); }
+function saveSentences() { LS.set('wtb_sentences', JSON.stringify(S.sentences)); }
+
+function escReg(s) { return s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); }
+
+function highlightWord(text, word) {
+  const e = escReg(word);
+  const re1 = new RegExp('\\b(' + e + ')\\b', 'gi');
+  if (re1.test(text)) return text.replace(re1, '<span class="hl">$1</span>');
+  const root = escReg(word.substring(0, Math.max(4, Math.floor(word.length * 0.72))));
+  const re2 = new RegExp('\\b(' + root + '\\w*)\\b', 'gi');
+  return text.replace(re2, '<span class="hl">$1</span>');
+}
+
+function blankWord(text, word) {
+  const blank = '<span class="blank">___________</span>';
+  const e = escReg(word);
+  const re1 = new RegExp('\\b' + e + '\\b', 'gi');
+  if (re1.test(text)) return text.replace(re1, blank);
+  const root = escReg(word.substring(0, Math.max(4, Math.floor(word.length * 0.72))));
+  const re2 = new RegExp('\\b' + root + '\\w*\\b', 'gi');
+  return text.replace(re2, blank);
+}
+
+function chapterShort(ch) {
+  const m = ch.match(/Part ([IVX]+)[,\s]+Chapter (\d+)/i);
+  if (m) return 'Pt.' + m[1] + ' · Ch.' + m[2];
+  return ch;
+}
+
+function shuffle(arr) {
+  const a = [...arr];
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+
+let toastTimer = null;
+function toast(msg, type = '') {
+  const t = document.getElementById('toast');
+  t.textContent = msg;
+  t.className = 'show' + (type ? ' ' + type : '');
+  if (toastTimer) clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => { t.className = ''; }, 2200);
+}
+
+let currentAudio = null; // Track currently playing audio
+
+function speak(word) {
+  if ('speechSynthesis' in window) {
+    // If audio is playing, stop it (toggle mute)
+    if (currentAudio) {
+      window.speechSynthesis.cancel();
+      currentAudio = null;
+      return;
+    }
+    // Start new audio
+    const u = new SpeechSynthesisUtterance(word);
+    u.lang = 'en-US'; u.rate = 0.85;
+    u.onend = () => { currentAudio = null; };
+    u.onerror = () => { currentAudio = null; };
+    currentAudio = u;
+    window.speechSynthesis.speak(u);
+  }
+
+// Audio for sentences - with toggle support
+function playCurrentSentenceAudio() {
+  try {
+    const sentEn = document.getElementById('sentEn');
+    if (sentEn) {
+      let text = sentEn.textContent;
+      if (text && text !== '—') {
+        text = text.replace(/<[^>]*>/g, '');
+        if (text.trim()) {
+          if ('speechSynthesis' in window) {
+            // Toggle: if audio is playing, stop it; otherwise play
+            if (currentAudio) {
+              window.speechSynthesis.cancel();
+              currentAudio = null;
+            } else {
+              const u = new SpeechSynthesisUtterance(text);
+              u.lang = 'en-US'; u.rate = 0.85;
+              u.onend = () => { currentAudio = null; };
+              u.onerror = () => { currentAudio = null; };
+              currentAudio = u;
+              window.speechSynthesis.speak(u);
+            }
+          }
+        }
+      }
+    }
+  } catch (e) { console.error('Audio error:', e); }
+}
+}
+
+function render() {
+  if (!GROUPS.length || !GROUPS[S.gIdx] || !GROUPS[S.gIdx][S.wIdx]) {
+    console.error('No data available');
+    return;
+  }
+  
+  const group = GROUPS[S.gIdx];
+  const entry = group[S.wIdx];
+  const isStarred = S.starred.has(entry.word);
+
+  document.getElementById('groupNumDisplay').textContent = (S.gIdx + 1) + ' / ' + NUM_GROUPS;
+  document.getElementById('prevGroupBtn').disabled = S.gIdx === 0;
+  document.getElementById('nextGroupBtn').disabled = S.gIdx === NUM_GROUPS - 1;
+  renderGroupDots();
+
+  document.getElementById('wordNumDisplay').textContent = S.wIdx + 1;
+  document.getElementById('groupSizeDisplay').textContent = group.length;
+  document.getElementById('prevWordBtn').disabled = S.wIdx === 0;
+  document.getElementById('nextWordBtn').disabled = S.wIdx === group.length - 1;
+
+  const sb = document.getElementById('starBtn');
+  sb.textContent = isStarred ? '★' : '☆';
+  sb.classList.toggle('starred', isStarred);
+
+  document.getElementById('wordDisplay').textContent = entry.word;
+  document.getElementById('pronDisplay').textContent = '[' + entry.pron + ']';
+  
+  // Remove any existing badge first to prevent duplicates
+  const oldBadge = document.querySelector('#pronDisplay + .badge-pos');
+  if (oldBadge) oldBadge.remove();
+  
+  // Create new badge
+  const posBadgeEl = document.createElement('span');
+  posBadgeEl.className = 'badge badge-pos';
+  posBadgeEl.textContent = '[' + (entry.part_of_speech || '') + ']';
+  posBadgeEl.style.display = 'inline-block';
+  posBadgeEl.style.marginLeft = '8px';
+  document.getElementById('pronDisplay').insertAdjacentElement('afterend', posBadgeEl);
+  
+  document.getElementById('defEn').textContent = entry.def_en;
+  document.getElementById('defZh').textContent = entry.def_zh;
+
+  document.getElementById('tabNovel').classList.toggle('active', S.sentTab === 0);
+  document.getElementById('tabAI').classList.toggle('active', S.sentTab === 1);
+
+  let sentEn, sentZh, sentSource;
+  if (S.sentTab === 0) {
+    sentEn = highlightWord(entry.quote_en, entry.word);
+    sentZh = entry.quote_zh;
+    sentSource = '— ' + BOOK_CONFIG.author + ', <em>' + BOOK_CONFIG.bookName + '</em> · ' + entry.chapter;
+  } else {
+    sentEn = highlightWord(entry.ex_en, entry.word);
+    sentZh = entry.ex_zh;
+    sentSource = '— AI Example · Thematically aligned with <em>' + BOOK_CONFIG.bookName + '</em>';
+  }
+  document.getElementById('sentEn').innerHTML = sentEn;
+  document.getElementById('sentZh').textContent = sentZh;
+  document.getElementById('sentSource').innerHTML = sentSource;
+
+  const sa = SYNAN[entry.word] || { syn: [], ant: [] };
+  document.getElementById('synChips').innerHTML = sa.syn.map(w => `<span class="synan-chip syn">${w}</span>`).join('');
+  document.getElementById('antChips').innerHTML = sa.ant.map(w => `<span class="synan-chip ant">${w}</span>`).join('');
+  document.getElementById('synanBlock').style.display = (sa.syn.length || sa.ant.length) ? 'flex' : 'none';
+
+  const tabFlash = document.getElementById('tabFlashcard'); if (tabFlash) tabFlash.classList.toggle('active', S.sentTab === 2);
+  const flashcardContainer = document.getElementById('flashcardContainer');
+  if (flashcardContainer) {
+    flashcardContainer.style.display = S.sentTab === 2 ? 'block' : 'none';
+    if (S.sentTab === 2) renderFlashcard(); //renderFlashcard();
+  }
+  document.getElementById('sentenceContent').style.display = S.sentTab === 2 ? 'none' : 'block';
+  if (S.sentTab === 2) renderFlashcard(); //renderFlashcard();
+
+  renderStarredSection();
+  renderMySentences();
+
+  document.getElementById('quizStartDesc').textContent =
+    'Test yourself on Group ' + (S.gIdx + 1) + '. Choose the word, then spell it.';
+  const done = S.quizDone[S.gIdx];
+  const badge = document.getElementById('quizScoreBadge');
+  if (done !== undefined) {
+    badge.style.display = 'inline-block';
+    badge.textContent = done.score + ' / ' + done.total + ' correct';
+  } else {
+    badge.style.display = 'none';
+  }
+
+  const cnt = S.starred.size;
+  document.getElementById('starredCount').textContent = cnt;
+  document.getElementById('starredCountHeader').textContent = cnt;
+}
+
+function renderGroupDots() {
+  const wrap = document.getElementById('groupDots');
+  wrap.innerHTML = '';
+  for (let i = 0; i < NUM_GROUPS; i++) {
+    const d = document.createElement('div');
+    d.className = 'group-dot' +
+      (i === S.gIdx ? ' active' : '') +
+      (S.quizDone[i] !== undefined && i !== S.gIdx ? ' done' : '');
+    wrap.appendChild(d);
+  }
+}
+
+function renderStarredSection() {
+  const list = document.getElementById('starredList');
+  list.innerHTML = '';
+  if (S.starred.size === 0) {
+    list.innerHTML = '<div class="starred-empty">No starred words yet. Tap ☆ on any word to save it.</div>';
+  } else {
+    [...S.starred].forEach(word => {
+      const idx = VOCAB.findIndex(v => v.word === word);
+      if (idx === -1) return;
+      const chip = document.createElement('button');
+      chip.className = 'starred-chip';
+      chip.textContent = word;
+      chip.title = VOCAB[idx].def_en;
+      chip.addEventListener('click', () => navigateToWord(idx));
+      list.appendChild(chip);
+    });
+  }
+  renderStarredQuizStart();
+}
+
+function renderMySentences() {
+  const word = GROUPS[S.gIdx][S.wIdx].word;
+  const sents = S.sentences[word] || [];
+  const max = 3;
+
+  const counter = document.getElementById('mySentCounter');
+  counter.textContent = sents.length + ' / ' + max;
+  counter.className = 'my-sent-counter' + (sents.length >= max ? ' full' : '');
+
+  const input = document.getElementById('mySentInput');
+  const saveBtn = document.getElementById('mySentSaveBtn');
+  input.disabled = sents.length >= max;
+  saveBtn.disabled = sents.length >= max;
+  input.placeholder = sents.length >= max
+    ? 'Maximum 3 sentences saved ✓'
+    : 'Write your own sentence using "' + word + '"…';
+
+  const list = document.getElementById('mySentList');
+  list.innerHTML = '';
+  sents.forEach((text, i) => {
+    const item = document.createElement('div');
+    item.className = 'my-sent-item';
+    item.innerHTML =
+      '<span class="my-sent-num">' + (i + 1) + '</span>' +
+      '<span class="my-sent-text">' + escapeHTML(text) + '</span>' +
+      '<button class="my-sent-del" data-idx="' + i + '" title="Delete">✕</button>';
+    item.querySelector('.my-sent-del').addEventListener('click', () => deleteSentence(word, i));
+    list.appendChild(item);
+  });
+}
+
+function escapeHTML(s) {
+  return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+
+function addSentence() {
+  const word = GROUPS[S.gIdx][S.wIdx].word;
+  const input = document.getElementById('mySentInput');
+  const text = input.value.trim();
+  if (!text) { toast('Please write a sentence first.', ''); return; }
+  if (!S.sentences[word]) S.sentences[word] = [];
+  if (S.sentences[word].length >= 3) { toast('Max 3 sentences per word.', ''); return; }
+  const wordLower = word.toLowerCase();
+  const rootLower = wordLower.substring(0, Math.max(4, Math.floor(wordLower.length * 0.72)));
+  if (!text.toLowerCase().includes(rootLower)) {
+    toast('💡 Try to use "' + word + '" in your sentence!', '');
+  }
+  S.sentences[word].push(text);
+  saveSentences();
+  input.value = '';
+  renderMySentences();
+  toast('✓ Sentence saved!', 'good');
+}
+
+function deleteSentence(word, idx) {
+  if (!S.sentences[word]) return;
+  S.sentences[word].splice(idx, 1);
+  if (S.sentences[word].length === 0) delete S.sentences[word];
+  saveSentences();
+  renderMySentences();
+}
+
+function renderStarredQuizStart() {
+  const count = S.starred.size;
+  const canStart = count >= 5;
+  document.getElementById('sqDesc').textContent = canStart
+    ? 'Quiz yourself on all ' + count + ' starred words.'
+    : 'Keep starring words to unlock your personal quiz.';
+  document.getElementById('sqStartBtn').style.display = canStart ? 'inline-block' : 'none';
+  document.getElementById('sqUnlockHint').style.display = canStart ? 'none' : 'block';
+  document.getElementById('sqStarredCount').textContent = count;
+  document.getElementById('sqStartArea').style.display = 'block';
+  document.getElementById('sqQuestionArea').style.display = 'none';
+  document.getElementById('sqResult').style.display = 'none';
+}
+
+function startStarredQuiz() {
+  const starredWords = [...S.starred];
+  if (starredWords.length < 5) return;
+
+  const entries = starredWords
+    .map(w => VOCAB.find(v => v.word === w))
+    .filter(Boolean);
+
+  const questions = shuffle(entries);
+  S.sqQuiz = { questions, qIdx: 0, score: 0, answered: false };
+
+  document.getElementById('sqStartArea').style.display = 'none';
+  document.getElementById('sqQuestionArea').style.display = 'block';
+  document.getElementById('sqResult').style.display = 'none';
+  renderSQQuestion();
+}
+
+function renderSQQuestion() {
+  const q = S.sqQuiz;
+  const entry = q.questions[q.qIdx];
+  const total = q.questions.length;
+
+  document.getElementById('sqQNum').textContent = 'Question ' + (q.qIdx + 1) + ' / ' + total;
+  document.getElementById('sqProgressFill').style.width = ((q.qIdx / total) * 100) + '%';
+  document.getElementById('sqSentence').innerHTML = blankWord(entry.quote_en, entry.word);
+
+  const pool = [...S.starred].filter(w => w !== entry.word);
+  const starredDistractors = shuffle(pool).slice(0, 3);
+  const needed = 3 - starredDistractors.length;
+  let extra = [];
+  if (needed > 0) {
+    extra = shuffle(VOCAB.map(v => v.word).filter(w => w !== entry.word && !S.starred.has(w))).slice(0, needed);
+  }
+  const choices = shuffle([entry.word, ...starredDistractors, ...extra].slice(0, 4));
+
+  const labels = ['A', 'B', 'C', 'D'];
+  const container = document.getElementById('sqChoices');
+  container.innerHTML = '';
+  choices.forEach((word, i) => {
+    const btn = document.createElement('button');
+    btn.className = 'choice-btn';
+    btn.innerHTML = '<span class="choice-label">' + labels[i] + '</span>' + word;
+    btn.dataset.word = word;
+    btn.addEventListener('click', () => checkSQAnswer(word, entry.word, entry.def_en));
+    container.appendChild(btn);
+  });
+
+  const fb = document.getElementById('sqFeedback');
+  fb.style.display = 'none';
+  fb.className = 'quiz-feedback';
+  document.getElementById('sqNextBtn').style.display = 'none';
+  q.answered = false;
+}
+
+function checkSQAnswer(chosen, correct, defHint) {
+  if (S.sqQuiz.answered) return;
+  S.sqQuiz.answered = true;
+
+  document.querySelectorAll('#sqChoices .choice-btn').forEach(btn => {
+    btn.disabled = true;
+    if (btn.dataset.word === correct) btn.classList.add('correct');
+    else if (btn.dataset.word === chosen && chosen !== correct) btn.classList.add('wrong');
+  });
+
+  const fb = document.getElementById('sqFeedback');
+  if (chosen === correct) {
+    S.sqQuiz.score++;
+    fb.className = 'quiz-feedback correct-fb';
+    fb.textContent = '✓ Correct! "' + correct + '" — ' + defHint.split(';')[0] + '.';
+  } else {
+    fb.className = 'quiz-feedback wrong-fb';
+    fb.textContent = '✗ The answer is "' + correct + '" — ' + defHint.split(';')[0] + '.';
+  }
+  fb.style.display = 'block';
+
+  const nextBtn = document.getElementById('sqNextBtn');
+  const isLast = S.sqQuiz.qIdx === S.sqQuiz.questions.length - 1;
+  nextBtn.textContent = isLast ? 'See Results →' : 'Next →';
+  nextBtn.style.display = 'inline-block';
+}
+
+function sqNext() {
+  const q = S.sqQuiz;
+  if (q.qIdx < q.questions.length - 1) {
+    q.qIdx++;
+    renderSQQuestion();
+  } else {
+    const total = q.questions.length;
+    const pct = Math.round((q.score / total) * 100);
+    const emoji = pct >= 80 ? '🎉' : pct >= 60 ? '👍' : '📚';
+    document.getElementById('sqQuestionArea').style.display = 'none';
+    document.getElementById('sqResult').style.display = 'block';
+    document.getElementById('sqProgressFill').style.width = '100%';
+    document.getElementById('sqResultScore').textContent = emoji + ' ' + q.score + ' / ' + total;
+    document.getElementById('sqResultLabel').textContent =
+      pct >= 80 ? 'Excellent — your starred words are solid!' :
+      pct >= 60 ? 'Good progress. Review the ones you missed.' :
+                  'Keep studying — revisit your starred words.';
+  }
+}
+
+function goGroup(idx) {
+  S.gIdx = Math.max(0, Math.min(NUM_GROUPS - 1, idx));
+  S.wIdx = 0;
+  S.sentTab = 0;
+  resetQuizUI();
+  render();
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+function goWord(idx) {
+  const group = GROUPS[S.gIdx];
+  S.wIdx = Math.max(0, Math.min(group.length - 1, idx));
+  S.sentTab = 0;
+  render();
+}
+
+function navigateToWord(vocabIdx) {
+  let cumulative = 0;
+  for (let g = 0; g < NUM_GROUPS; g++) {
+    if (vocabIdx < cumulative + GROUPS[g].length) {
+      S.gIdx = g;
+      S.wIdx = vocabIdx - cumulative;
+      S.sentTab = 0;
+      resetQuizUI();
+      render();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      return;
+    }
+    cumulative += GROUPS[g].length;
+  }
+}
+
+function toggleStar() {
+  const word = GROUPS[S.gIdx][S.wIdx].word;
+  if (S.starred.has(word)) {
+    S.starred.delete(word);
+    toast('Removed from starred', '');
+  } else {
+    S.starred.add(word);
+    toast('⭐ Starred: ' + word, 'gold');
+  }
+  saveStarred();
+  render();
+}
+
+function resetQuizUI() {
+  S.quiz = null;
+  document.getElementById('quizBody').classList.remove('open');
+  document.getElementById('quizToggleIcon').classList.remove('open');
+  document.getElementById('quizStartArea').style.display = 'block';
+  document.getElementById('quizQuestionArea').style.display = 'none';
+  document.getElementById('quizResult').style.display = 'none';
+}
+
+function startQuiz() {
+  const group = GROUPS[S.gIdx];
+  const questions = shuffle(group.map((entry, i) => ({ entry, groupIdx: i })));
+  S.quiz = {
+    questions,
+    qIdx: 0,
+    phase: 1,
+    score: 0,
+    spellScore: 0,
+    answered: false,
+  };
+  document.getElementById('quizStartArea').style.display = 'none';
+  document.getElementById('quizQuestionArea').style.display = 'block';
+  document.getElementById('quizResult').style.display = 'none';
+  renderQuestion();
+}
+
+function renderQuestion() {
+  const q = S.quiz;
+  const { entry } = q.questions[q.qIdx];
+  const total = q.questions.length;
+  const step = q.qIdx * 2 + (q.phase - 1);
+  const totalSteps = total * 2;
+
+  document.getElementById('quizQNum').textContent =
+    'Word ' + (q.qIdx + 1) + ' / ' + total + ' · ' + (q.phase === 1 ? 'Part 1: Choose' : 'Part 2: Spell');
+  document.getElementById('quizProgressFill').style.width = ((step / totalSteps) * 100) + '%';
+
+  document.getElementById('quizNextBtn').style.display = 'none';
+
+  if (q.phase === 1) {
+    document.getElementById('quizPhase1').style.display = 'block';
+    document.getElementById('quizPhase2').style.display = 'none';
+
+    document.getElementById('quizSentence').innerHTML = blankWord(entry.quote_en, entry.word);
+
+    const group = GROUPS[S.gIdx];
+    const distractors = shuffle(group.map(w => w.word).filter(w => w !== entry.word)).slice(0, 3);
+    const choices = shuffle([entry.word, ...distractors]);
+    const labels = ['A', 'B', 'C', 'D'];
+    const container = document.getElementById('quizChoices');
+    container.innerHTML = '';
+    choices.forEach((word, i) => {
+      const btn = document.createElement('button');
+      btn.className = 'choice-btn';
+      btn.innerHTML = '<span class="choice-label">' + labels[i] + '</span>' + word;
+      btn.dataset.word = word;
+      btn.addEventListener('click', () => checkAnswer(word, entry.word));
+      container.appendChild(btn);
+    });
+
+    const fb = document.getElementById('quizFeedback');
+    fb.style.display = 'none';
+    fb.className = 'quiz-feedback';
+    q.answered = false;
+
+  } else {
+    document.getElementById('quizPhase1').style.display = 'none';
+    document.getElementById('quizPhase2').style.display = 'block';
+    renderQuizSpell(entry);
+  }
+}
+
+function renderQuizSpell(entry) {
+  const word = entry.word.toLowerCase();
+  document.getElementById('qSpellSentence').innerHTML = highlightWord(entry.ex_en, entry.word)
+    .replace(/<span class="hl">([^<]+)<\/span>/gi, '<span class="hl">_____<\/span>');
+
+  const boxes = document.getElementById('qSpellBoxes');
+  boxes.innerHTML = '';
+  for (let i = 0; i < word.length; i++) {
+    if (word[i] === '-') {
+      const sep = document.createElement('div');
+      sep.style.cssText = 'width:10px;display:flex;align-items:center;justify-content:center;color:var(--muted2);font-weight:900;font-size:1.2rem;';
+      sep.textContent = '-';
+      boxes.appendChild(sep);
+    } else {
+      const b = document.createElement('div');
+      b.className = 'spell-box' + (i === 0 ? ' cursor' : '');
+      b.dataset.idx = i;
+      boxes.appendChild(b);
+    }
+  }
+  const inp = document.getElementById('qSpellInput');
+  inp.value = '';
+  inp.placeholder = word.length + ' letters';
+  const fb = document.getElementById('qSpellFeedback');
+  fb.style.display = 'none';
+  fb.className = 'quiz-feedback';
+  document.getElementById('qSpellRevealBtn').style.display = 'block';
+  updateQSpellBoxes('');
+}
+
+function updateQSpellBoxes(typed) {
+  const entry = S.quiz.questions[S.quiz.qIdx].entry;
+  const word = entry.word.toLowerCase().replace(/-/g, '');
+  const t = typed.toLowerCase();
+  const allBoxes = document.querySelectorAll('#qSpellBoxes .spell-box');
+  allBoxes.forEach((b, i) => {
+    b.className = 'spell-box';
+    if (i < t.length) { b.textContent = t[i]; b.classList.add('filled'); }
+    else { b.textContent = ''; if (i === t.length) b.classList.add('cursor'); }
+  });
+}
+
+function checkQuizSpelling() {
+  const entry = S.quiz.questions[S.quiz.qIdx].entry;
+  const word = entry.word.toLowerCase();
+  const typed = document.getElementById('qSpellInput').value.trim().toLowerCase();
+  const fb = document.getElementById('qSpellFeedback');
+  if (!typed) { toast('Type the word first!', ''); return; }
+
+  const allBoxes = document.querySelectorAll('#qSpellBoxes .spell-box');
+  const wordClean = word.replace(/-/g, '');
+  const typedClean = typed.replace(/-/g, '');
+
+  if (typedClean === wordClean) {
+    S.quiz.spellScore++;
+    allBoxes.forEach(b => { b.className = 'spell-box correct'; });
+    fb.className = 'quiz-feedback correct-fb';
+    fb.textContent = '✓ Perfect spelling!';
+    toast('✓ Spelled correctly!', 'good');
+  } else {
+    const wordArr = wordClean.split('');
+    allBoxes.forEach((b, i) => {
+      b.className = 'spell-box';
+      const ch = typedClean[i] || '';
+      b.textContent = ch || wordArr[i];
+      if (!ch) b.classList.add('wrong');
+      else if (ch === wordArr[i]) b.classList.add('correct');
+      else { b.classList.add('wrong'); b.textContent = ch; }
+    });
+    fb.className = 'quiz-feedback wrong-fb';
+    fb.textContent = '✗ The word is "' + entry.word + '".';
+  }
+  fb.style.display = 'block';
+  document.getElementById('qSpellRevealBtn').style.display = 'none';
+  const isLast = S.quiz.qIdx === S.quiz.questions.length - 1;
+  const nextBtn = document.getElementById('quizNextBtn');
+  nextBtn.textContent = isLast ? 'See Results →' : 'Next Word →';
+  nextBtn.style.display = 'inline-block';
+}
+
+function checkAnswer(chosen, correct) {
+  if (S.quiz.answered) return;
+  S.quiz.answered = true;
+
+  const btns = document.querySelectorAll('.choice-btn');
+  btns.forEach(btn => {
+    btn.disabled = true;
+    if (btn.dataset.word === correct) btn.classList.add('correct');
+    else if (btn.dataset.word === chosen && chosen !== correct) btn.classList.add('wrong');
+  });
+
+  const fb = document.getElementById('quizFeedback');
+  if (chosen === correct) {
+    S.quiz.score++;
+    fb.className = 'quiz-feedback correct-fb';
+    fb.textContent = '✓ Correct! "' + correct + '" is right.';
+  } else {
+    // Auto-star word on wrong answer
+    S.starred.add(correct);
+    saveStarred();
+    fb.className = 'quiz-feedback wrong-fb';
+    fb.textContent = '✗ The answer is "' + correct + '".';
+  }
+  fb.style.display = 'block';
+
+  const nextBtn = document.getElementById('quizNextBtn');
+  nextBtn.textContent = 'Next: Spell It →';
+  nextBtn.style.display = 'inline-block';
+}
+
+function quizNext() {
+  const q = S.quiz;
+  const total = q.questions.length;
+  if (q.phase === 1) {
+    q.phase = 2;
+    renderQuestion();
+  } else if (q.qIdx < total - 1) {
+    q.qIdx++;
+    q.phase = 1;
+    renderQuestion();
+  } else {
+    const mcPct = Math.round((q.score / total) * 100);
+    const spPct = Math.round((q.spellScore / total) * 100);
+    const combined = q.score + q.spellScore;
+    const combMax = total * 2;
+    const emoji = mcPct >= 80 ? '🎉' : mcPct >= 60 ? '👍' : '📚';
+    document.getElementById('quizQuestionArea').style.display = 'none';
+    document.getElementById('quizResult').style.display = 'block';
+    document.getElementById('quizProgressFill').style.width = '100%';
+    document.getElementById('quizResultScore').textContent = emoji + ' ' + combined + ' / ' + combMax;
+    document.getElementById('quizResultLabel').textContent =
+      '📖 Choose: ' + q.score + '/' + total + '  ·  ✏️ Spell: ' + q.spellScore + '/' + total + (
+        mcPct >= 80 && spPct >= 80 ? '  —  Outstanding!' :
+        mcPct >= 60 ? '  —  Good work! Review the ones you missed.' :
+        '  —  Keep studying — you\'ll get there!'
+      );
+    S.quizDone[S.gIdx] = { score: combined, total: combMax };
+    render();
+  }
+}
+
+
+
+function updateBoxes(typed) {
+  const entry = GROUPS[S.gIdx][S.wIdx];
+  const word = entry.word.toLowerCase().replace(/-/g, '');
+  const t = typed.toLowerCase();
+  const allBoxes = document.querySelectorAll('.spell-box');
+
+  allBoxes.forEach((b, i) => {
+    b.className = 'spell-box';
+    if (i < t.length) {
+      b.textContent = t[i];
+      b.classList.add('filled');
+    } else {
+      b.textContent = '';
+      if (i === t.length) b.classList.add('cursor');
+    }
+  });
+}
+
+function checkSpelling() {
+  const entry = GROUPS[S.gIdx][S.wIdx];
+  const word = entry.word.toLowerCase();
+  const typed = document.getElementById('spellInput').value.trim().toLowerCase();
+  const fb = document.getElementById('spellFeedback');
+
+  if (!typed) { toast('Type the word first!', ''); return; }
+
+  const allBoxes = document.querySelectorAll('.spell-box');
+  const wordClean = word.replace(/-/g, '');
+  const typedClean = typed.replace(/-/g, '');
+
+  if (typedClean === wordClean) {
+    allBoxes.forEach(b => { b.className = 'spell-box correct'; b.textContent = b.textContent || ''; });
+    fb.className = 'spell-feedback ok';
+    fb.textContent = '✓ Correct! You spelled "' + entry.word + '" perfectly.';
+    toast('✓ Spelled correctly!', 'good');
+  } else {
+    const wordArr = wordClean.split('');
+    allBoxes.forEach((b, i) => {
+      b.className = 'spell-box';
+      const ch = typedClean[i] || '';
+      b.textContent = ch || wordArr[i];
+      if (!ch)          b.classList.add('wrong');
+      else if (ch === wordArr[i]) b.classList.add('correct');
+      else              { b.classList.add('wrong'); b.textContent = ch; }
+    });
+    fb.className = 'spell-feedback err';
+    fb.textContent = '✗ Not quite. The word is "' + entry.word + '".';
+  }
+  fb.style.display = 'block';
+  document.getElementById('spellRevealBtn').style.display = 'none';
+}
+
+document.getElementById('prevGroupBtn').addEventListener('click', () => goGroup(S.gIdx - 1));
+document.getElementById('nextGroupBtn').addEventListener('click', () => goGroup(S.gIdx + 1));
+document.getElementById('prevWordBtn').addEventListener('click', () => goWord(S.wIdx - 1));
+document.getElementById('nextWordBtn').addEventListener('click', () => goWord(S.wIdx + 1));
+document.getElementById('starBtn').addEventListener('click', toggleStar);
+  document.getElementById('speakBtn').addEventListener('click', () => speak(GROUPS[S.gIdx][S.wIdx].word));
+  const sentenceBtn = document.getElementById('sentenceHearBtn');
+  if (sentenceBtn) {
+    sentenceBtn.addEventListener('click', () => {
+      const sentEn = document.getElementById('sentEn');
+      if (sentEn) {
+        let text = sentEn.textContent;
+        if (text && text !== '—') {
+          text = text.replace(/<[^>]*>/g, '');
+          if (text.trim()) speak(text);
+        }
+      }
+    });
+  }
+document.getElementById('speakBtn2').addEventListener('click', () => speak(GROUPS[S.gIdx][S.wIdx].word));
+document.getElementById('tabNovel').addEventListener('click', () => { S.sentTab = 0; render(); });
+document.getElementById('tabAI').addEventListener('click',   () => { S.sentTab = 1; render(); });
+const tabFlashcard = document.getElementById('tabFlashcard');
+if (tabFlashcard) tabFlashcard.addEventListener('click', () => { S.sentTab = 2; flashcardState.index = 0; render(); if (document.getElementById('flashcardContainer')) renderFlashcard(); });
+document.getElementById('mySentSaveBtn').addEventListener('click', addSentence);
+document.getElementById('mySentInput').addEventListener('keydown', e => {
+  if (e.key === 'Enter') { e.preventDefault(); addSentence(); }
+});
+document.getElementById('sqStartBtn').addEventListener('click', startStarredQuiz);
+document.getElementById('sqNextBtn').addEventListener('click', sqNext);
+document.getElementById('sqRetryBtn').addEventListener('click', startStarredQuiz);
+document.getElementById('sqResetBtn').addEventListener('click', renderStarredQuizStart);
+document.getElementById('quizHeader').addEventListener('click', () => {
+  const body = document.getElementById('quizBody');
+  const icon = document.getElementById('quizToggleIcon');
+  const open = body.classList.toggle('open');
+  icon.classList.toggle('open', open);
+});
+document.getElementById('quizStartBtn').addEventListener('click', startQuiz);
+document.getElementById('quizSkipBtn').addEventListener('click', () => {
+  document.getElementById('quizBody').classList.remove('open');
+  document.getElementById('quizToggleIcon').classList.remove('open');
+});
+document.getElementById('qSpellInput').addEventListener('input', e => {
+  updateQSpellBoxes(e.target.value);
+});
+document.getElementById('qSpellInput').addEventListener('keydown', e => {
+  if (e.key === 'Enter') { e.preventDefault(); checkQuizSpelling(); }
+});
+document.getElementById('qSpellCheckBtn').addEventListener('click', checkQuizSpelling);
+document.getElementById('qSpellRevealBtn').addEventListener('click', () => {
+  const entry = S.quiz.questions[S.quiz.qIdx].entry;
+  const fb = document.getElementById('qSpellFeedback');
+  fb.className = 'quiz-feedback wrong-fb';
+  fb.textContent = 'The word is "' + entry.word + '". Try again next time!';
+  fb.style.display = 'block';
+  document.getElementById('qSpellRevealBtn').style.display = 'none';
+  const allBoxes = document.querySelectorAll('#qSpellBoxes .spell-box');
+  const wordClean = entry.word.toLowerCase().replace(/-/g,'');
+  allBoxes.forEach((b, i) => { b.className = 'spell-box wrong'; b.textContent = wordClean[i] || ''; });
+  const isLast = S.quiz.qIdx === S.quiz.questions.length - 1;
+  const nextBtn = document.getElementById('quizNextBtn');
+  nextBtn.textContent = isLast ? 'See Results →' : 'Next Word →';
+  nextBtn.style.display = 'inline-block';
+});
+document.getElementById('quizNextBtn').addEventListener('click', quizNext);
+document.getElementById('quizRetryBtn').addEventListener('click', () => {
+  document.getElementById('quizResult').style.display = 'none';
+  document.getElementById('quizStartArea').style.display = 'block';
+});
+document.getElementById('quizCloseBtn').addEventListener('click', () => {
+  document.getElementById('quizBody').classList.remove('open');
+  document.getElementById('quizToggleIcon').classList.remove('open');
+});
+document.getElementById('starredHeader').addEventListener('click', () => {
+  const body = document.getElementById('starredBody');
+  const icon = document.getElementById('starredToggleIcon');
+  const open = body.classList.toggle('open');
+  icon.classList.toggle('open', open);
+});
+document.getElementById('starredToggleBtn').addEventListener('click', () => {
+  const body = document.getElementById('starredBody');
+  const icon = document.getElementById('starredToggleIcon');
+  body.classList.add('open');
+  icon.classList.add('open');
+  document.getElementById('starredSection').scrollIntoView({ behavior: 'smooth' });
+});
+// [Spell listener removed - Spell tab replaced with Flashcard]
+// [Spell listener removed - Spell tab replaced with Flashcard]
+// // [Spell listener removed - Spell tab replaced with Flashcard] /* REMOVED - Spell tab no longer exists */
+const flashPrevBtn = document.getElementById('flashPrevBtn');
+if (flashPrevBtn) flashPrevBtn.addEventListener('click', flashcardPrev);
+const flashNextBtn = document.getElementById('flashNextBtn');
+if (flashNextBtn) flashNextBtn.addEventListener('click', flashcardNext);
+const flashStarBtn = document.getElementById('flashStarBtn');
+if (flashStarBtn) flashStarBtn.addEventListener('click', toggleFlashcardStar);
+// // [Spell listener removed - Spell tab replaced with Flashcard]
+document.addEventListener('keydown', e => {
+  const tag = document.activeElement.tagName;
+  if (tag === 'INPUT' || tag === 'TEXTAREA') return;
+  switch(e.key) {
+    case 'ArrowRight': e.preventDefault(); goWord(S.wIdx + 1); break;
+    case 'ArrowLeft':  e.preventDefault(); goWord(S.wIdx - 1); break;
+    case 'ArrowUp':    e.preventDefault(); goGroup(S.gIdx - 1); break;
+    case 'ArrowDown':  e.preventDefault(); goGroup(S.gIdx + 1); break;
+    case 's': case 'S': toggleStar(); break;
+    case 'p': case 'P': speak(GROUPS[S.gIdx][S.wIdx].word); break;
+    case '1': S.sentTab = 0; render(); break;
+    case '2': S.sentTab = 1; render(); break;
+  }
+});
+
+// ── Print functions ──────────────────────────────────────────
+function openPrintModal() {
+  const grp = GROUPS[S.gIdx];
+  document.getElementById('printGroupLabel').textContent = 'Group ' + (S.gIdx + 1);
+  document.getElementById('printGroupCount').textContent = grp.length;
+  document.getElementById('printAllCount').textContent = VOCAB.length;
+  document.getElementById('printModal').style.display = 'block';
+}
+
+function closePrintModal() {
+  document.getElementById('printModal').style.display = 'none';
+}
+
+function doPrint() {
+  const scope = document.querySelector('input[name="printScope"]:checked').value;
+  const words = scope === 'group' ? GROUPS[S.gIdx] : VOCAB;
+  const groupLabel = scope === 'group' ? 'Group ' + (S.gIdx + 1) : 'All Words';
+
+  const rows = words.map((entry, i) => {
+    const sa = SYNAN[entry.word] || { syn: [], ant: [] };
+    const synText = sa.syn.length ? sa.syn.join(', ') : '—';
+    const antText = sa.ant.length ? sa.ant.join(', ') : '—';
+    return `
+      <div class="pe">
+        <div class="pe-head">
+          <span class="pe-num">${i + 1}</span>
+          <span class="pe-word">${entry.word}</span>
+          <span class="pe-pron">${entry.pron}</span>
+          <span class="pe-ch">${entry.chapter}</span>
+        </div>
+        <div class="pe-def">${entry.def_en}</div>
+        <div class="pe-def zh">${entry.def_zh}</div>
+        <div class="pe-synan">
+          <span class="pe-label syn">SYN</span>${synText}
+          &nbsp;&nbsp;<span class="pe-label ant">ANT</span>${antText}
+        </div>
+        <div class="pe-sent">
+          <span class="pe-sent-label">📖</span>
+          <span>${entry.quote_en}</span>
+        </div>
+        <div class="pe-sent zh">
+          <span class="pe-sent-label"></span>
+          <span>${entry.quote_zh}</span>
+        </div>
+        <div class="pe-sent ex">
+          <span class="pe-sent-label">💡</span>
+          <span>${entry.ex_en}</span>
+        </div>
+        <div class="pe-sent zh">
+          <span class="pe-sent-label"></span>
+          <span>${entry.ex_zh}</span>
+        </div>
+      </div>`;
+  }).join('');
+
+  const html = `<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>${BOOK_CONFIG.bookName} — Vocabulary (${groupLabel})</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: Georgia, 'Songti SC', 'SimSun', serif;
+    font-size: 9.5pt;
+    color: #111;
+    background: white;
+    padding: 14mm 12mm;
+  }
+  h1 {
+    font-size: 15pt;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 3pt;
+    letter-spacing: .02em;
+  }
+  .subtitle {
+    text-align: center;
+    font-size: 9pt;
+    color: #555;
+    margin-bottom: 12pt;
+    padding-bottom: 8pt;
+    border-bottom: 1.5pt solid #333;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 14pt;
+  }
+  .pe {
+    border-bottom: .5pt solid #ccc;
+    padding: 7pt 0 6pt;
+    break-inside: avoid;
+  }
+  .pe-head {
+    display: flex;
+    align-items: baseline;
+    gap: 5pt;
+    margin-bottom: 2pt;
+    flex-wrap: wrap;
+  }
+  .pe-num {
+    font-size: 7.5pt;
+    color: #888;
+    min-width: 16pt;
+  }
+  .pe-word {
+    font-size: 12pt;
+    font-weight: 700;
+    color: #111;
+    letter-spacing: .01em;
+  }
+  .pe-pron {
+    font-size: 8pt;
+    color: #555;
+    font-style: italic;
+  }
+  .pe-ch {
+    font-size: 7.5pt;
+    color: #888;
+    margin-left: auto;
+  }
+  .pe-def {
+    font-size: 8.5pt;
+    color: #222;
+    margin-bottom: 1.5pt;
+    line-height: 1.4;
+  }
+  .pe-def.zh {
+    color: #444;
+    font-size: 8pt;
+    margin-bottom: 3pt;
+  }
+  .pe-synan {
+    font-size: 8pt;
+    margin-bottom: 3.5pt;
+    color: #333;
+    line-height: 1.5;
+  }
+  .pe-label {
+    font-size: 7pt;
+    font-weight: 700;
+    padding: 1pt 4pt;
+    border-radius: 3pt;
+    margin-right: 3pt;
+    letter-spacing: .04em;
+  }
+  .pe-label.syn {
+    background: #e6faf4;
+    color: #1a7a55;
+    border: .5pt solid #aadec8;
+  }
+  .pe-label.ant {
+    background: #fef0f2;
+    color: #a02040;
+    border: .5pt solid #f0b0bc;
+  }
+  .pe-sent {
+    font-size: 8pt;
+    line-height: 1.45;
+    color: #333;
+    display: flex;
+    gap: 4pt;
+    margin-top: 1.5pt;
+  }
+  .pe-sent.ex { color: #1a4a70; }
+  .pe-sent.zh { color: #555; margin-top: 1pt; }
+  .pe-sent-label {
+    font-size: 8pt;
+    min-width: 12pt;
+    flex-shrink: 0;
+  }
+  .footer {
+    position: running(footer);
+    font-size: 7.5pt;
+    color: #888;
+    text-align: center;
+  }
+  @page {
+    margin: 14mm 12mm 18mm;
+    @bottom-center { content: element(footer); }
+  }
+  @media print {
+    .footer { display: block; }
+  }
+</style>
+</head>
+<body>
+<h1>${BOOK_CONFIG.bookName} Vocabulary</h1>
+<div class="subtitle">${BOOK_CONFIG.author} &nbsp;·&nbsp; ${groupLabel} &nbsp;·&nbsp; ${words.length} words &nbsp;·&nbsp; 📖 Novel sentence &nbsp; 💡 AI example sentence</div>
+<div class="footer">${BOOK_CONFIG.bookName} — ${BOOK_CONFIG.author} &nbsp;|&nbsp; ${groupLabel}</div>
+<div class="grid">${rows}</div>
+</body>
+</html>`;
+
+  closePrintModal();
+  const win = window.open('', '_blank');
+  win.document.write(html);
+  win.document.close();
+  win.focus();
+  setTimeout(() => win.print(), 400);
+}
+
+
+let flashcardState = { side: 'word', index: 0 };
+
+function speakFlashcard() {
+  const group = GROUPS[S.gIdx];
+  const word = group[flashcardState.index].word;
+  speak(word);
+}
+
+
+
+function toggleFlashcard() {
+  const inner = document.getElementById('flashInner');
+  const label = document.getElementById('flashLabel');
+  const content = document.getElementById('flashContent');
+  
+  const group = GROUPS[S.gIdx];
+  const entry = group[flashcardState.index];
+  
+  if (flashcardState.side === 'word') {
+    flashcardState.side = 'def-en';
+    label.textContent = 'English Definition';
+    const pos = entry.part_of_speech || entry.pos || 'word';
+    content.innerHTML = '<span class="flashcard-pos">[' + pos + ']</span>' + entry.def_en;
+    content.className = 'flashcard-content flashcard-def-en';
+    inner.style.background = 'linear-gradient(160deg, rgba(26,74,112,.85), rgba(14,34,48,.95))';
+  } else if (flashcardState.side === 'def-en') {
+    flashcardState.side = 'def-zh';
+    label.textContent = 'Chinese Definition';
+    const pos2 = entry.part_of_speech || entry.pos || 'word';
+    content.innerHTML = '<span class="flashcard-pos">[' + pos2 + ']</span>' + entry.def_zh;
+    content.className = 'flashcard-content flashcard-def-zh';
+    inner.style.background = 'linear-gradient(160deg, rgba(50,34,90,.85), rgba(30,20,50,.95))';
+  } else {
+    flashcardState.side = 'word';
+    label.textContent = 'Word';
+    content.innerHTML = '<div class="flashcard-word-main">' + entry.word + '</div>' + '<div class="flashcard-pron">[' + (entry.pron || '') + ']</div>' + '<div class="flashcard-pos-display">[' + (entry.part_of_speech || '') + ']</div>' + '<button class="flashcard-hear" onclick="speakFlashcard()" data-word="' + entry.word.replace(/'/g, "\\'") + '">🔊 Hear</button>';
+    content.className = 'flashcard-content';
+    inner.style.background = 'linear-gradient(160deg, rgba(14,34,48,.85), rgba(11,27,36,.95))';
+  }
+}
+
+function renderFlashcard() {
+  const container = document.getElementById('flashcardContainer');
+  if (!container) return; // Exit if flashcard container doesn't exist
+  
+  const group = GROUPS[S.gIdx];
+  const entry = group[flashcardState.index];
+  const isStarred = S.starred.has(entry.word);
+  
+  flashcardState.side = 'word';
+  
+  const inner = document.getElementById('flashInner');
+  const label = document.getElementById('flashLabel');
+  const content = document.getElementById('flashContent');
+  
+  label.textContent = 'Word';
+  content.innerHTML = '<div class="flashcard-word-main">' + entry.word + '</div><div class="flashcard-pron">[' + (entry.pron || '') + ']</div><span class="badge badge-pos">[' + (entry.part_of_speech || '') + ']</span><button class="flashcard-hear" id="flashHearBtn" onclick="speakFlashcard()">🔊 Hear</button>';
+  content.className = 'flashcard-content';
+  inner.style.background = 'linear-gradient(160deg, rgba(14,34,48,.85), rgba(11,27,36,.95))';
+  
+  document.getElementById('flashProgress').textContent = (flashcardState.index + 1) + ' / ' + group.length;
+  document.getElementById('flashPrevBtn').disabled = flashcardState.index === 0;
+  document.getElementById('flashNextBtn').disabled = flashcardState.index === group.length - 1;
+  
+  const starBtn = document.getElementById('flashStarBtn');
+  starBtn.textContent = isStarred ? '⭐' : '☆';
+  starBtn.classList.toggle('starred', isStarred);
+}
+
+function flashcardPrev() {
+  if (flashcardState.index > 0) {
+    flashcardState.index--;
+    renderFlashcard();
+  }
+}
+
+function flashcardNext() {
+  const group = GROUPS[S.gIdx];
+  if (flashcardState.index < group.length - 1) {
+    flashcardState.index++;
+    renderFlashcard();
+  }
+}
+
+function toggleFlashcardStar() {
+  const group = GROUPS[S.gIdx];
+  const word = group[flashcardState.index].word;
+  if (S.starred.has(word)) {
+    S.starred.delete(word);
+  } else {
+    S.starred.add(word);
+  }
+  saveStarred();
+  renderFlashcard();
+}
+
+
+// Initialize
+if (VOCAB.length > 1) {
+  render();
+} else {
+  document.getElementById('wordDisplay').textContent = 'Add Data';
+  document.getElementById('defEn').textContent = 'Please paste your 100 vocabulary words into the VOCAB array.';
+}
+</script>
+
+<!-- Print Modal -->
+<div id="printModal" style="display:none; position:fixed; inset:0; background:rgba(0,0,0,.75); z-index:9999; overflow-y:auto; padding:20px;">
+  <div style="max-width:520px; margin:0 auto; background:var(--panel); border:1px solid var(--s35); border-radius:16px; padding:28px 24px;">
+    <h2 style="font-family:Georgia,serif; color:var(--good); margin-bottom:6px; font-size:1.3rem;">🖨️ Print Vocabulary</h2>
+    <p style="color:var(--muted); font-size:.85rem; margin-bottom:20px;">Each entry includes word, pronunciation, definitions, synonyms &amp; antonyms, and both sentences.</p>
+    <div style="display:flex; flex-direction:column; gap:10px; margin-bottom:22px;">
+      <label style="display:flex; align-items:center; gap:10px; cursor:pointer; color:var(--text); font-weight:600; font-size:.95rem;">
+        <input type="radio" name="printScope" value="group" checked style="accent-color:var(--good); width:16px; height:16px;">
+        Current group only (<span id="printGroupLabel">Group 1</span> · <span id="printGroupCount">10</span> words)
+      </label>
+      <label style="display:flex; align-items:center; gap:10px; cursor:pointer; color:var(--text); font-weight:600; font-size:.95rem;">
+        <input type="radio" name="printScope" value="all" style="accent-color:var(--good); width:16px; height:16px;">
+        All words (<span id="printAllCount">100</span> words)
+      </label>
+    </div>
+    <div style="display:flex; gap:10px;">
+      <button onclick="doPrint()" style="flex:1; background:var(--good); color:#06131a; border:none; border-radius:10px; padding:11px; font-weight:800; font-size:.95rem; cursor:pointer;">Print / Save PDF</button>
+      <button onclick="closePrintModal()" style="flex:1; background:var(--panel2); color:var(--muted); border:1px solid var(--s35); border-radius:10px; padding:11px; font-weight:700; font-size:.95rem; cursor:pointer;">Cancel</button>
+    </div>
+  </div>
+</div>
+</body>
+</html>
