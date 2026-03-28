@@ -1227,7 +1227,7 @@ footer {
   </div>
 
   <footer>
-    <div class="footer-author">Created by Daniel Wang (dwang055@gmail.com)· HSK 1 Vocabulary Collection · For Educational Use · © 2026</div>
+    <div class="footer-author">Created by Daniel Wang (dwang055@gmail.com) · HSK 1 Vocabulary Collection · For Educational Use · © 2026</div>
     <div class="footer-quote">“A journey of a thousand miles begins with a single step.”<br>Lao Tzu, Tao Te Ching</div>
   </footer>
 </div>
@@ -7613,7 +7613,7 @@ function speak(word) {
     }
     // Start new audio
     const u = new SpeechSynthesisUtterance(word);
-    u.lang = 'en-US'; u.rate = 0.85;
+    u.lang = 'zh-CN'; u.rate = 0.85;
     u.onend = () => { currentAudio = null; };
     u.onerror = () => { currentAudio = null; };
     currentAudio = u;
@@ -7636,7 +7636,7 @@ function playCurrentSentenceAudio() {
               currentAudio = null;
             } else {
               const u = new SpeechSynthesisUtterance(text);
-              u.lang = 'en-US'; u.rate = 0.85;
+              u.lang = 'zh-CN'; u.rate = 0.85;
               u.onend = () => { currentAudio = null; };
               u.onerror = () => { currentAudio = null; };
               currentAudio = u;
@@ -8708,4 +8708,3 @@ if (VOCAB.length > 1) {
 </div>
 </body>
 </html>
-
